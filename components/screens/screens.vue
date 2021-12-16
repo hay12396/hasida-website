@@ -1,7 +1,7 @@
 <template>
   <div class="screens" ref="screens">
     <NumberedTitle title="Screens" color="white" number="10" />
-    <div class="images">
+    <div class="images screen-images">
       <div class="purple purple1"></div>
       <div class="purple purple2"></div>
       <div class="purple purple3"></div>
@@ -12,46 +12,46 @@
         <Image src="/Color_mockups/sign_in.png" alt="Sign in" />
       </div>
 
+      <div class="title title2">
+        <ScreenNumberTitle number="02" title="Sign up" textAlign="left" />
+      </div>
       <div class="image image2">
         <Image src="/Color_mockups/sign_up.png" alt="Sign up" />
       </div>
-      <div class="title2">
-        <ScreenNumberTitle number="02" title="Sign up" textAlign="left" />
-      </div>
 
+      <div class="title title3">
+        <ScreenNumberTitle number="03" title="Favorite" textAlign="right" />
+      </div>
       <div class="image image3">
         <Image src="/Color_mockups/choose_your_favorite.png" alt="Favorite" />
       </div>
-      <div class="title3">
-        <ScreenNumberTitle number="03" title="Favorite" textAlign="right" />
-      </div>
 
+      <div class="title title4">
+        <ScreenNumberTitle number="04" title="Shake" textAlign="left" />
+      </div>
       <div class="image image4">
         <Image src="/Color_mockups/orange.png" alt="Orange shake" />
       </div>
-      <div class="title4">
-        <ScreenNumberTitle number="04" title="Shake" textAlign="left" />
-      </div>
 
+      <div class="title title5">
+        <ScreenNumberTitle number="05" title="Recommended" textAlign="right" />
+      </div>
       <div class="image image5">
         <Image src="/Color_mockups/green_reco.png" alt="Recommended shakes" />
       </div>
-      <div class="title5">
-        <ScreenNumberTitle number="05" title="Recommended" textAlign="right" />
-      </div>
 
+      <div class="title title6">
+        <ScreenNumberTitle number="06" title="My cart" textAlign="left" />
+      </div>
       <div class="image image6">
         <Image src="/Color_mockups/my_cart.png" alt="My cart" />
       </div>
-      <div class="title6">
-        <ScreenNumberTitle number="06" title="My cart" textAlign="left" />
-      </div>
 
+      <div class="title title7">
+        <ScreenNumberTitle number="07" title="Checkout" textAlign="right" />
+      </div>
       <div class="image image7">
         <Image src="/Color_mockups/check_out.png" alt="Checkout" />
-      </div>
-      <div class="title7">
-        <ScreenNumberTitle number="07" title="Checkout" textAlign="right" />
       </div>
     </div>
   </div>
@@ -65,6 +65,7 @@ export default {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       this.$refs.screens.classList.add("mobile");
       //init some library here
+
     }
   },
   components: { NumberedTitle, Image, ScreenNumberTitle }
@@ -78,9 +79,7 @@ export default {
   border-radius: 200px;
   padding: 2.125rem 8.188rem;
   margin-top: -300px;
-  &.mobile {
-    width: 100vw;
-  }
+
   .images {
     margin-top: 2rem;
 
@@ -108,13 +107,16 @@ export default {
       }
     }
 
+    .title {
+      z-index: 1;
+      position: absolute;
+    }
+
     .image2 {
       top: 1044px;
       left: 135px;
     }
     .title2 {
-      z-index: 1;
-      position: absolute;
       left: 521px;
       top: 1268px;
     }
@@ -124,8 +126,6 @@ export default {
       left: 844px;
     }
     .title3 {
-      z-index: 1;
-      position: absolute;
       right: 516px;
       top: 1673px;
     }
@@ -135,8 +135,6 @@ export default {
       left: 135px;
     }
     .title4 {
-      z-index: 1;
-      position: absolute;
       left: 518px;
       top: 2184px;
     }
@@ -146,8 +144,6 @@ export default {
       left: 837px;
     }
     .title5 {
-      z-index: 1;
-      position: absolute;
       right: 517px;
       top: 2710px;
     }
@@ -157,8 +153,6 @@ export default {
       left: 131px;
     }
     .title6 {
-      z-index: 1;
-      position: absolute;
       left: 514px;
       top: 3176px;
     }
@@ -168,8 +162,6 @@ export default {
       left: 844px;
     }
     .title7 {
-      z-index: 1;
-      position: absolute;
       right: 516px;
       top: 3842px;
     }
@@ -205,6 +197,40 @@ export default {
       &.purple3 {
         top: 3124px;
         height: 675px;
+      }
+    }
+  }
+
+  &.mobile {
+    padding: 1.75rem;
+    border-radius: 0;
+    margin-top: 0;
+    height: auto;
+    .images {
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+      overflow-x: scroll;
+      .purple,
+      .circle {
+        display: none;
+      }
+      .title {
+        display: none;
+      }
+      .image {
+        position: static;
+        max-width: 280px;
+        max-height: 620px;
+        margin: 0;
+        transform: none !important;
+        flex: 0 0 auto;
+      }
+
+      .image1 {
+        *:not(img) {
+          display: none;
+        }
       }
     }
   }

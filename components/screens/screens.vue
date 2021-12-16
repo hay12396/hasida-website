@@ -96,9 +96,10 @@ import ScreenNumberTitle from "./screen-number-title.vue";
 
 export default {
   mounted() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if (this.isMobile()) {
       this.$refs.screens.classList.add("mobile");
       //init some library here
+      debugger;
       let script = document.createElement('script');
       script.type = 'text/javascript';
       script.src = "https://unpkg.com/swiper/swiper-bundle.min.js";
@@ -133,7 +134,7 @@ export default {
   },
   methods: {
     isMobile() {
-      return typeof window !== "undefined" && window.screen.width < 768;
+      return typeof window !== "undefined" && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
   },
   components: { NumberedTitle, Image, ScreenNumberTitle }
@@ -271,6 +272,7 @@ export default {
   .mobile-images {
     img {
       margin: 0 0 2rem;
+      max-height: 800px;
     }
   }
   &.mobile {
@@ -278,6 +280,10 @@ export default {
     border-radius: 0;
     margin-top: 0;
     height: auto;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
     .images {
       display: none;
     }

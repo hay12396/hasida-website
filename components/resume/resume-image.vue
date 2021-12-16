@@ -5,7 +5,10 @@
       <span>UI</span>
     </div>
     <div class="info">
-      <img src alt="hasida image" />
+      <div class="image">
+        <Image src="/shared/me.png" alt="Me" />
+        <div class="circle"></div>
+      </div>
       <div class="titles">
         <div class="portfolio">PORTFOLIO</div>
         <div class="name">Hasida Zohar</div>
@@ -15,8 +18,9 @@
   </div>
 </template>
 <script>
+import Image from "../shared/image.vue";
 export default {
-
+  components: { Image }
 }
 </script>
 <style scoped lang="less">
@@ -59,10 +63,28 @@ export default {
       margin-left: 25%;
       padding-top: 15%;
     }
-    img {
-      width: 340px;
-      height: 400px;
+
+    .image {
+      position: relative;
+      img {
+        width: 340px;
+        height: 400px;
+        z-index: 1;
+        position: relative;
+      }
+      .circle {
+        position: absolute;
+        left: 47.5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 340px;
+        height: 340px;
+        background-color: #d1c6fe;
+        border-radius: 100%;
+        z-index: 0;
+      }
     }
+
     .titles {
       text-align: left;
 

@@ -164,6 +164,22 @@ export default {
           }
           @media screen and (min-width: 768px) {
             img {
+              height: 100px;
+            }
+            img:first-child {
+              max-width: 149px;
+            }
+            img:nth-child(2) {
+              max-width: 143px;
+            }
+            img:nth-child(3) {
+              max-width: 143px;
+              border-right: 5px solid #d4dbf9;
+            }
+          }
+
+          @media screen and (min-width: 1360px) {
+            img {
               border-top: 5px solid #d4dbf9;
               border-left: 5px solid #d4dbf9;
               border-bottom: 5px solid #d4dbf9;

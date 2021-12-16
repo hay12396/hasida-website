@@ -1,5 +1,5 @@
 <template>
-  <!-- <Resume /> -->
+  <Resume />
   <Hero />
   <TextWithFiguresBig />
   <TextWithFiguresSmall />
@@ -7,7 +7,7 @@
   <DesignConcepts />
   <TestValidation />
   <Screens />
-  <Contact />
+  <!-- <Contact /> -->
 </template>
 
 <script>
@@ -22,6 +22,16 @@ import Screens from "./components/screens/screens.vue";
 import Contact from "./components/contact/contact.vue";
 
 export default {
+  mounted() {
+    let w = window.screen.width
+
+    if (w >= 768 && w < 1360) {
+      let old = document.querySelector("meta[name='viewport']");
+      if (old) {
+        old.content = "width=1360,  user-scalable=no";
+      }
+    }
+  },
   components: {
     Resume,
     Hero,
@@ -44,10 +54,23 @@ html,
 body {
   padding: 0;
   margin: 0 auto;
-  max-width: 1360px;
+  max-width: 100%;
   border: 1px solid #d1c6fe22;
+  font-size: 14px;
 }
-
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  html,
+  body {
+    font-size: 16px;
+    max-width: 1360px;
+  }
+}
 ul {
   padding-left: 1.5rem;
 }

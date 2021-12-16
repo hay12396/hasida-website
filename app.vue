@@ -1,5 +1,5 @@
 <template>
-  <Resume />
+  <!-- <Resume /> -->
   <Hero />
   <TextWithFiguresBig />
   <TextWithFiguresSmall />

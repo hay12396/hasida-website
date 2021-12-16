@@ -64,6 +64,12 @@ body {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1280px) {
+  html,
+  body {
+    max-width: 1280px;
+  }
+}
 @media screen and (min-width: 1360px) {
   html,
   body {

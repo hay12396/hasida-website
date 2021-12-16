@@ -14,7 +14,10 @@ export default {
   margin-top: 4.875rem;
 
   .title {
-    font-size: 6.25rem;
+    font-size: 3rem;
+    @media screen and (min-width: 768px) {
+      font-size: 6.25rem;
+    }
     font-weight: 700;
     color: #959fb1;
     line-height: 8.511rem;

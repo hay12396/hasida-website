@@ -1,7 +1,7 @@
 <template>
   <div class="screens" ref="screens">
-    <NumberedTitle title="Screens" color="white" number="10" />
-    <div class="images screen-images">
+    <NumberedTitle title="Screens" color="white" number="10" v-if="isMobile()" />
+    <div class="images screen-images" v-if="!isMobile()">
       <div class="purple purple1"></div>
       <div class="purple purple2"></div>
       <div class="purple purple3"></div>
@@ -54,18 +54,86 @@
         <Image src="/Color_mockups/check_out.png" alt="Checkout" />
       </div>
     </div>
+
+    <div class="mobile-images" v-if="isMobile()">
+      <div class="carousel gallery">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <Image src="/Color_mockups/sign_in.png" alt="Sign in" />
+            </div>
+            <div class="swiper-slide">
+              <Image src="/Color_mockups/sign_up.png" alt="Sign up" />
+            </div>
+            <div class="swiper-slide">
+              <Image src="/Color_mockups/choose_your_favorite.png" alt="Favorite" />
+            </div>
+            <div class="swiper-slide">
+              <Image src="/Color_mockups/orange.png" alt="Orange shake" />
+            </div>
+            <div class="swiper-slide">
+              <Image src="/Color_mockups/green_reco.png" alt="Recommended shakes" />
+            </div>
+            <div class="swiper-slide">
+              <Image src="/Color_mockups/my_cart.png" alt="My cart" />
+            </div>
+            <div class="swiper-slide">
+              <Image src="/Color_mockups/check_out.png" alt="Checkout" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 import NumberedTitle from "../shared/numbered-title.vue";
 import Image from "../shared/image.vue";
 import ScreenNumberTitle from "./screen-number-title.vue";
+
 export default {
   mounted() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       this.$refs.screens.classList.add("mobile");
       //init some library here
+      let script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = "https://unpkg.com/swiper/swiper-bundle.min.js";
 
+      script.onload = () => {
+
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+      }
+
+
+      let link = document.createElement('link');
+      link.rel = "stylesheet";
+      link.href = "https://unpkg.com/swiper/swiper-bundle.min.css";
+
+      document.head.append(link);
+
+      document.head.append(script);
+    }
+  },
+  methods: {
+    isMobile() {
+      return typeof window !== "undefined" && window.screen.width < 768;
     }
   },
   components: { NumberedTitle, Image, ScreenNumberTitle }
@@ -200,38 +268,18 @@ export default {
       }
     }
   }
-
+  .mobile-images {
+    img {
+      margin: 0 0 2rem;
+    }
+  }
   &.mobile {
     padding: 1.75rem;
     border-radius: 0;
     margin-top: 0;
     height: auto;
     .images {
-      display: flex;
-      flex-direction: row;
-      max-width: 100%;
-      overflow-x: scroll;
-      .purple,
-      .circle {
-        display: none;
-      }
-      .title {
-        display: none;
-      }
-      .image {
-        position: static;
-        max-width: 280px;
-        max-height: 620px;
-        margin: 0;
-        transform: none !important;
-        flex: 0 0 auto;
-      }
-
-      .image1 {
-        *:not(img) {
-          display: none;
-        }
-      }
+      display: none;
     }
   }
 }

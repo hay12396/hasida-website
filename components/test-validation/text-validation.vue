@@ -72,6 +72,10 @@ export default {
         font-weight: 600;
       }
 
+      .image {
+        margin-top: 1rem;
+      }
+
       @media screen and (min-width: 768px) {
         .text,
         .image {
@@ -80,10 +84,7 @@ export default {
         }
 
         .image {
-          max-width: 100%;
-          @media screen and (min-width: 768px) {
-            max-width: 561px;
-          }
+          max-width: 561px;
           margin: 1rem 0 0 3rem;
         }
       }

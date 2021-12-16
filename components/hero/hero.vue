@@ -26,19 +26,31 @@ export default {
 .wrapper {
   position: relative;
   .hero {
-    padding: 9rem 6.25rem 0 6.25rem;
+    padding: 1.5rem 1.5rem 0;
+    @media screen and (min-width: 768px) {
+      padding: 9rem 6.25rem 0 6.25rem;
+    }
     .title {
       margin-top: 1.375rem;
+      margin-bottom: 1rem;
       font-size: 3rem;
       color: #9e95bf;
-      font-weight: bold;
+      font-weight: 700;
+      line-height: 4.086rem;
     }
 
     .sub-title {
       color: #9e95bf;
       font-size: 1.5rem;
       line-height: 2.043rem;
-      margin-bottom: 144px;
+      margin-bottom: 3rem;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 9rem;
+      }
+
+      b {
+        font-weight: 700;
+      }
     }
   }
 
@@ -46,6 +58,10 @@ export default {
     position: absolute;
     right: 0;
     top: 0;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 }
 </style>

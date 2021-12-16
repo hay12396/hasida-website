@@ -67,7 +67,10 @@ export default {
 </script>
 <style lang="less" scoped>
 .design-concepts {
-  padding: 2.688rem 6.25rem 0 6.25rem;
+  padding: 2.688rem 1.75em 0;
+  @media screen and (min-width: 768px) {
+    padding: 2.688rem 6.25rem 0;
+  }
 
   .info {
     color: #666666;
@@ -92,8 +95,9 @@ export default {
       margin-top: 1rem;
       display: flex;
       flex-direction: column;
-
+      align-items: center;
       @media screen and (min-width: 768px) {
+        align-items: flex-start;
         flex-direction: row;
       }
 
@@ -118,6 +122,10 @@ export default {
 
     .info1 {
       .arrows {
+        display: none;
+        @media screen and (min-width: 768px) {
+          display: block;
+        }
         img {
           position: absolute;
           width: 17px;
@@ -130,32 +138,58 @@ export default {
     }
 
     .info2 {
+      margin-top: 1.75rem;
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
       .images {
         margin-top: 4.5rem;
         flex-direction: column;
 
         .line1 {
+          display: flex;
+          flex-direction: column;
+          @media screen and (min-width: 768px) {
+            flex-direction: row;
+          }
           img {
-            border-top: 5px solid #d4dbf9;
-            border-left: 5px solid #d4dbf9;
-            border-bottom: 5px solid #d4dbf9;
-            height: 121px;
+            border: 5px solid #d4dbf9;
           }
-          img:first-child {
-            max-width: 179px;
-          }
-          img:nth-child(2) {
-            max-width: 173px;
-          }
+          img:nth-child(2),
           img:nth-child(3) {
-            max-width: 173px;
-            border-right: 5px solid #d4dbf9;
+            display: none;
+            @media screen and (min-width: 768px) {
+              display: block;
+            }
+          }
+          @media screen and (min-width: 768px) {
+            img {
+              border-top: 5px solid #d4dbf9;
+              border-left: 5px solid #d4dbf9;
+              border-bottom: 5px solid #d4dbf9;
+              border-right: none;
+              height: 121px;
+            }
+            img:first-child {
+              max-width: 179px;
+            }
+            img:nth-child(2) {
+              max-width: 173px;
+            }
+            img:nth-child(3) {
+              max-width: 173px;
+              border-right: 5px solid #d4dbf9;
+            }
           }
         }
 
         .line2 {
           margin-top: 4.875rem;
-
+          display: flex;
+          flex-direction: column;
+          @media screen and (min-width: 768px) {
+            flex-direction: row;
+          }
           img:first-child {
             max-width: 183px;
             @media screen and (min-width: 768px) {
@@ -164,35 +198,53 @@ export default {
           }
           img:nth-child(2) {
             max-width: 90px;
+            display: none;
             @media screen and (min-width: 768px) {
               margin-right: 2.75rem;
+              display: block;
             }
           }
           img:nth-child(3) {
             max-width: 180px;
+            display: none;
+            @media screen and (min-width: 768px) {
+              display: block;
+            }
           }
         }
 
         .arrows {
-          display: none;
-          @media screen and (min-width: 768px) {
-            display: block;
-          }
           img {
             width: 17px;
             height: 48px;
             position: absolute;
-            top: 150px;
+            top: 145px;
           }
           img:first-child {
             left: 75px;
-            top: 150px;
+            top: 280px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @media screen and (min-width: 768px) {
+              left: 75px;
+              top: 145px;
+              transform: none;
+            }
           }
           img:nth-child(2) {
             left: 270px;
+            display: none;
+            @media screen and (min-width: 768px) {
+              display: block;
+            }
           }
           img:nth-child(3) {
             left: 420px;
+            display: none;
+            @media screen and (min-width: 768px) {
+              display: block;
+            }
           }
         }
       }

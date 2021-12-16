@@ -28,8 +28,10 @@ export default {
 </script>
 <style lang="less" scoped>
 .low-fidelity {
-  margin: 2.688rem 0 20rem;
-
+  margin: 2.688rem 0 3rem;
+  @media screen and (min-width: 768px) {
+    margin: 2.688rem 0 20rem;
+  }
   .images {
     display: flex;
     flex-direction: row;

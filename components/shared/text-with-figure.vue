@@ -38,13 +38,13 @@ export default {
 .wrapper {
   display: flex;
   justify-content: space-between;
+  flex-direction: column-reverse;
   @media screen and (min-width: 768px) {
     flex-direction: row;
-  }
-
-  &.left {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    &.left {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
   }
 
   .figure,

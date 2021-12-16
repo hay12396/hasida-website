@@ -20,13 +20,13 @@ export default {
 </script>
 <style lang="less" scoped>
 .figures-small {
-  padding: 0 6.25rem 0 6.25rem;
-  max-width: 720px;
+  padding: 0 1.75rem;
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    padding: 0 6.25rem 0 6.25rem;
+    max-width: 720px;
+  }
 }
-@media screen and (min-width: 768px) {
-  margin-top: -57px;
-}
-
 b {
   font-weight: 700;
   color: #9e95bf;

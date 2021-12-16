@@ -78,7 +78,9 @@ export default {
   border-radius: 200px;
   padding: 2.125rem 8.188rem;
   margin-top: -300px;
-
+  &.mobile {
+    width: 100vw;
+  }
   .images {
     margin-top: 2rem;
 
@@ -169,7 +171,7 @@ export default {
       z-index: 1;
       position: absolute;
       right: 516px;
-      top: 3728px;
+      top: 3842px;
     }
 
     .circle {

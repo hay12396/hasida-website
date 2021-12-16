@@ -12,9 +12,9 @@ export default {
 </script>
 <style scoped>
 h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 2.625rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 3.064rem;
   margin: 0 0 1rem 0;
   padding: 0;
 }

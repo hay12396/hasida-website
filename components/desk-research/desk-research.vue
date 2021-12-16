@@ -41,8 +41,11 @@ export default {
 </script>
 <style lang="less" scoped>
 .desk-research {
-  padding: 1rem 6.25rem 0 6.25rem;
-
+  padding: 1rem 1.75rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 1rem 6.25rem 0 6.25rem;
+  }
+  color: #666666;
   .graphs {
     display: flex;
     flex-direction: column;
@@ -56,12 +59,14 @@ export default {
       font-size: 1rem;
       line-height: 1.362rem;
       margin-bottom: 2.25rem;
+      color: #666666;
     }
 
     .graph1 {
-      max-width: 509px;
+      max-width: 100%;
       @media screen and (min-width: 768px) {
         margin-right: 4.625rem;
+        max-width: 509px;
       }
 
       .results {

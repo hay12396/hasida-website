@@ -29,7 +29,10 @@ export default {
 </script>
 <style scoped lang="less">
 .education {
-  max-width: 535px;
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    max-width: 535px;
+  }
   font-size: 1.5rem;
   line-height: 2.043rem;
   color: #747474;

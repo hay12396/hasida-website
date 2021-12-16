@@ -32,20 +32,28 @@ export default {
   .images {
     .line1 {
       img:first-child {
-        max-width: 617px;
+        max-width: 100%;
         @media screen and (min-width: 768px) {
           margin-right: 4.188rem;
+          max-width: 617px;
         }
       }
       img:nth-child(2) {
-        max-width: 411px;
+        max-width: 100%;
+        @media screen and (min-width: 768px) {
+          max-width: 411px;
+        }
       }
     }
 
     .line2 {
       margin-top: 2.688rem;
+
       img {
-        max-width: 615px;
+        max-width: 100%;
+        @media screen and (min-width: 768px) {
+          max-width: 615px;
+        }
       }
     }
   }

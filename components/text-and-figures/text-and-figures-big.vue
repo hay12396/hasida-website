@@ -8,11 +8,11 @@
       color="dark-accent"
     >
       <div
-        class="mx-1"
+        class="mx-1 description"
       >We want the platform to be easy to use, fast and efficient for the trainees so that they can order during their break and the shake will arrive at the end of the workout.</div>
-      <br />
+
       <div
-        class="mx-1"
+        class="mx-1 description mt-1"
       >The goal of all participants training is physical growth. Shake protein is very important for their training. 80% of the participants want to be able to change the base of the shake in the app. Also, they would like to choose a protein shake from the list of recommendation ones.</div>
     </TextWithFigure>
     <TextWithFigure
@@ -24,7 +24,7 @@
       title="Hypothesis generation"
       color="dark-accent"
     >
-      <ul>
+      <ul class="description">
         <li>Simple and intuative for the users to understand and use.</li>
         <li>One application which should do multiple tasks and cater all the major needs.</li>
         <li>the trainee can choose a different shake each day.</li>
@@ -39,7 +39,7 @@
       color="dark-accent"
     >
       <div
-        class="mx-1"
+        class="mx-1 description"
       >Conducting user research helps in understanding user’s needs, experiences, behaviors and goals. Creating personas helps to step out of ourself. It helps to recognise that different people have different requirements and expectations and also helps to identify for whom we are designing for.</div>
     </TextWithFigure>
   </div>
@@ -52,12 +52,27 @@ export default {
 </script>
 <style lang="less" scoped>
 .figures-wrapper {
-  padding: 1.75rem 6.25rem 0 6.25rem;
+  padding: 1.75rem;
+  @media screen and (min-width: 768px) {
+    padding: 1.75rem 6.25rem 0 6.25rem;
+  }
 }
 .mx-1 {
-  max-width: 840px;
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    max-width: 840px;
+  }
 }
 .mb-1 {
   margin-bottom: 2.938rem;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.703rem;
+  color: #666666;
 }
 </style>

@@ -50,10 +50,13 @@ export default {
 <style lang="less" scoped>
 .test-validation {
   background-color: #f4f6ff;
-  border-radius: 200px 200px 0px 0px;
-  padding: 3.063rem 6.25rem;
-  margin-top: 4.188rem;
 
+  padding: 1.75rem;
+  margin-top: 4.188rem;
+  @media screen and (min-width: 768px) {
+    padding: 3.063rem 6.25rem;
+    border-radius: 200px 200px 0px 0px;
+  }
   .part1 {
     .info {
       display: flex;
@@ -77,7 +80,10 @@ export default {
         }
 
         .image {
-          max-width: 561px;
+          max-width: 100%;
+          @media screen and (min-width: 768px) {
+            max-width: 561px;
+          }
           margin: 1rem 0 0 3rem;
         }
       }

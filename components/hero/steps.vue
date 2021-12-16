@@ -59,8 +59,11 @@ export default {
   position: relative;
   background: #d1c6fe;
   color: white;
-  padding: 188px 6.25rem 60px 6.25rem;
-  border-radius: 0px 0px 200px 200px;
+  padding: 1.75rem;
+  @media screen and (min-width: 768px) {
+    padding: 188px 6.25rem 60px 6.25rem;
+    border-radius: 0px 0px 200px 200px;
+  }
 
   .step-number {
     position: absolute;
@@ -73,34 +76,60 @@ export default {
 
   .step-1 {
     position: relative;
+    margin-bottom: 3rem;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
     .step-number {
       left: -9%;
-      top: -79%;
+      top: -72px;
+
+      @media screen and (min-width: 768px) {
+        top: -79%;
+      }
     }
   }
 
   .step-2 {
     position: relative;
     margin-top: 2rem;
-    margin-bottom: 9.375rem;
-
+    margin-bottom: 3rem;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 9.375rem;
+    }
     .step-number {
-      top: 30%;
-      left: 21%;
+      left: -9%;
+      top: -72px;
+
+      @media screen and (min-width: 768px) {
+        top: 30%;
+        left: 21%;
+      }
     }
   }
 
   .explanation {
     max-width: 360px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.703rem;
   }
 
   .step-3 {
     position: relative;
-    width: 70%;
-    margin: 0 10% 5rem 24%;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 10% 5rem 24%;
+      width: 70%;
+    }
     .step-number {
-      top: 0;
-      left: -37%;
+      left: -9%;
+      top: -72px;
+
+      @media screen and (min-width: 768px) {
+        top: 0;
+        left: -37%;
+      }
     }
 
     .explanation {
@@ -111,7 +140,6 @@ export default {
         font-size: 1.25rem;
         line-height: 1.703rem;
         flex: 0 0 auto;
-        width: 30%;
 
         b {
           font-size: 1.5rem;
@@ -126,6 +154,7 @@ export default {
 
         .column {
           margin-top: 0;
+          width: 30%;
         }
       }
     }

@@ -130,7 +130,7 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "C:/Users/hay zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/dist" + "/" + "1639741357";
+const STATIC_ASSETS_BASE = "C:/Users/hay zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/dist" + "/" + "1639741831";
 const PAYLOAD_JS = "/payload.js";
 const getClientManifest = cachedImport(() => import('file:///C:/Users/hay%20zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/.nuxt/dist/server/client.manifest.mjs'));
 const getSSRApp = cachedImport(() => import('file:///C:/Users/hay%20zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/.nuxt/dist/server/server.mjs'));

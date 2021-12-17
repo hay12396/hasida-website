@@ -1,6 +1,11 @@
 <template>
   <div class="screens" ref="screens">
-    <NumberedTitle title="Screens" color="white" number="10" v-if="isMobile()" />
+    <NumberedTitle
+      title="Screens"
+      color="white"
+      number="10"
+      v-if="isMobile()"
+    />
     <div class="images screen-images" v-if="!isMobile()">
       <div class="purple purple1"></div>
       <div class="purple purple2"></div>
@@ -66,13 +71,19 @@
               <Image src="/Color_mockups/sign_up.png" alt="Sign up" />
             </div>
             <div class="swiper-slide">
-              <Image src="/Color_mockups/choose_your_favorite.png" alt="Favorite" />
+              <Image
+                src="/Color_mockups/choose_your_favorite.png"
+                alt="Favorite"
+              />
             </div>
             <div class="swiper-slide">
               <Image src="/Color_mockups/orange.png" alt="Orange shake" />
             </div>
             <div class="swiper-slide">
-              <Image src="/Color_mockups/green_reco.png" alt="Recommended shakes" />
+              <Image
+                src="/Color_mockups/green_reco.png"
+                alt="Recommended shakes"
+              />
             </div>
             <div class="swiper-slide">
               <Image src="/Color_mockups/my_cart.png" alt="My cart" />
@@ -99,12 +110,11 @@ export default {
     if (this.isMobile()) {
       this.$refs.screens.classList.add("mobile");
       //init some library here
-      let script = document.createElement('script');
-      script.type = 'text/javascript';
+      let script = document.createElement("script");
+      script.type = "text/javascript";
       script.src = "https://unpkg.com/swiper/swiper-bundle.min.js";
 
       script.onload = () => {
-
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 1,
           spaceBetween: 30,
@@ -118,11 +128,9 @@ export default {
             prevEl: ".swiper-button-prev",
           },
         });
+      };
 
-      }
-
-
-      let link = document.createElement('link');
+      let link = document.createElement("link");
       link.rel = "stylesheet";
       link.href = "https://unpkg.com/swiper/swiper-bundle.min.css";
 
@@ -133,11 +141,16 @@ export default {
   },
   methods: {
     isMobile() {
-      return typeof window !== "undefined" && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
+      return (
+        typeof window !== "undefined" &&
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      );
+    },
   },
-  components: { NumberedTitle, Image, ScreenNumberTitle }
-}
+  components: { NumberedTitle, Image, ScreenNumberTitle },
+};
 </script>
 <style lang="less" scoped>
 .screens {
@@ -182,58 +195,69 @@ export default {
 
     .image2 {
       top: 1044px;
-      left: 135px;
+      left: 7%;
     }
     .title2 {
-      left: 521px;
+      left: 38%;
       top: 1268px;
     }
 
     .image3 {
       top: 1132px;
-      left: 844px;
+      right: 7%;
     }
     .title3 {
-      right: 516px;
+      right: 38.5%;
       top: 1673px;
     }
 
     .image4 {
       top: 1975px;
-      left: 135px;
+      left: 7%;
     }
     .title4 {
-      left: 518px;
+      left: 38%;
       top: 2184px;
     }
 
     .image5 {
       top: 2157px;
-      left: 837px;
+      right: 7%;
     }
     .title5 {
-      right: 517px;
+      right: 38.5%;
       top: 2710px;
     }
 
     .image6 {
       top: 2972px;
-      left: 131px;
+      left: 7%;
     }
     .title6 {
-      left: 514px;
+      left: 38%;
       top: 3176px;
     }
 
     .image7 {
       top: 3299px;
-      left: 844px;
+      right: 7%;
     }
     .title7 {
-      right: 516px;
+      right: 38.5%;
       top: 3842px;
     }
-
+    @media screen and (min-width: 1360px) {
+      .title2,
+      .title4,
+      .title6 {
+        left: 37%;
+      }
+      .title3,
+      .title5,
+      .title7 {
+        right: 36.5%;
+      }
+    }
     .circle {
       position: absolute;
       background-color: #eaf0fc;

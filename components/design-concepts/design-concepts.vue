@@ -1,13 +1,20 @@
 <template>
   <div class="design-concepts">
-    <NumberedTitle number="08" title="Design: concept and sketching" color="dark-accent" />
+    <NumberedTitle
+      number="08"
+      title="Design: concept and sketching"
+      color="dark-accent"
+    />
 
     <div class="info">
       <div class="info1">
         <div class="title">Research synthesis:</div>
-        <div
-          class="content"
-        >The integration of existing knowledge and research findings pertinent to an issue. The aim of synthesis is to increase the generality and applicability of those findings and to develop new knowledge through the process of integration.</div>
+        <div class="content">
+          The integration of existing knowledge and research findings pertinent
+          to an issue. The aim of synthesis is to increase the generality and
+          applicability of those findings and to develop new knowledge through
+          the process of integration.
+        </div>
 
         <div class="images">
           <div class="image1">
@@ -19,7 +26,10 @@
           </div>
           <div class="image2">
             <div class="italic">feature prioritization</div>
-            <Image src="/Desk_research/feature_prioritization.png" alt="feature prioritization" />
+            <Image
+              src="/Desk_research/feature_prioritization.png"
+              alt="feature prioritization"
+            />
           </div>
           <div class="arrows">
             <Image src="/shared/arrow.png" alt="arrow" />
@@ -29,14 +39,26 @@
 
       <div class="info2">
         <div class="title">Crazy 8:</div>
-        <div
-          class="content"
-        >The integration of existing knowledge and research findings pertinent to an issue. The aim of synthesis is to increase the generality and applicability of those findings and to develop new knowledge through the process of integration.</div>
+        <div class="content">
+          The integration of existing knowledge and research findings pertinent
+          to an issue. The aim of synthesis is to increase the generality and
+          applicability of those findings and to develop new knowledge through
+          the process of integration.
+        </div>
         <div class="images">
           <div class="line1">
-            <Image src="/Crazy_8/Crazy8_live_chat.png" alt="themes and opportunities" />
-            <Image src="/Crazy_8/Crazy8_favorite_shake.png" alt="themes and opportunities" />
-            <Image src="/Crazy_8/Crazy8_reco.png" alt="themes and opportunities" />
+            <Image
+              src="/Crazy_8/Crazy8_live_chat.png"
+              alt="themes and opportunities"
+            />
+            <Image
+              src="/Crazy_8/Crazy8_favorite_shake.png"
+              alt="themes and opportunities"
+            />
+            <Image
+              src="/Crazy_8/Crazy8_reco.png"
+              alt="themes and opportunities"
+            />
           </div>
 
           <div class="line2">
@@ -62,8 +84,8 @@ import NumberedTitle from "../shared/numbered-title.vue";
 import Image from "../shared/image.vue";
 import UsabilityStudy from "./usability-study.vue";
 export default {
-  components: { NumberedTitle, Image, UsabilityStudy }
-}
+  components: { NumberedTitle, Image, UsabilityStudy },
+};
 </script>
 <style lang="less" scoped>
 .design-concepts {
@@ -234,7 +256,10 @@ export default {
             width: 17px;
             height: 48px;
             position: absolute;
-            top: 145px;
+            top: 120px;
+            @media screen and (min-width: 1360px) {
+              top: 145px;
+            }
           }
           img:first-child {
             left: 75px;
@@ -244,8 +269,11 @@ export default {
 
             @media screen and (min-width: 768px) {
               left: 75px;
-              top: 145px;
+              top: 120px;
               transform: none;
+            }
+            @media screen and (min-width: 1360px) {
+              top: 145px;
             }
           }
           img:nth-child(2) {

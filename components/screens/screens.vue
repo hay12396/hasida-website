@@ -99,7 +99,6 @@ export default {
     if (this.isMobile()) {
       this.$refs.screens.classList.add("mobile");
       //init some library here
-      debugger;
       let script = document.createElement('script');
       script.type = 'text/javascript';
       script.src = "https://unpkg.com/swiper/swiper-bundle.min.js";

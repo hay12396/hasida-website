@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxi dev",
-    "build": "nuxi build",
+    "build": "nuxi build && copy 'package.json' './output/",
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {

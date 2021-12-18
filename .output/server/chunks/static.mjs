@@ -8,13 +8,13 @@ const assets = {
   "/_nuxt/entry-fcfa3e33.mjs": {
     "type": "application/javascript",
     "etag": "\"19626-f+TIMpGNrExNKwar3hpjuiibzYE\"",
-    "mtime": "2021-12-17T12:26:28.374Z",
+    "mtime": "2021-12-18T15:39:34.425Z",
     "path": "../public/_nuxt/entry-fcfa3e33.mjs"
   },
   "/_nuxt/manifest.json": {
     "type": "application/json",
     "etag": "\"d4-MzjZHkySfrlhFqEl2idwMqd1KTE\"",
-    "mtime": "2021-12-17T12:26:28.374Z",
+    "mtime": "2021-12-18T15:39:34.425Z",
     "path": "../public/_nuxt/manifest.json"
   },
   "/images/Color_mockups/blue.png": {
@@ -296,7 +296,7 @@ const assets = {
   "/_nuxt/assets/entry.d487b610.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"4bee-BL81Yqi1aoPc2pr+X79lp0T3Iws\"",
-    "mtime": "2021-12-17T12:26:28.374Z",
+    "mtime": "2021-12-18T15:39:34.425Z",
     "path": "../public/_nuxt/assets/entry.d487b610.css"
   },
   "/images/mobile/Color_mockups/blue.png": {
@@ -1142,7 +1142,7 @@ function getAsset (id) {
 const METHODS = ["HEAD", "GET"];
 const PUBLIC_PATH = "/_nuxt/";
 const TWO_DAYS = 2 * 60 * 60 * 24;
-const STATIC_ASSETS_BASE = "C:/Users/hay zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/dist" + "/" + "1639743984";
+const STATIC_ASSETS_BASE = "C:/Users/hay zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/dist" + "/" + "1639841968";
 async function serveStatic(req, res) {
   if (!METHODS.includes(req.method)) {
     return;

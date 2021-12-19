@@ -32,7 +32,7 @@
       </ul>
     </TextWithFigure>
     <TextWithFigure
-      class="mb-1"
+      class="m-mb-1"
       figure="persona_research"
       number="06"
       title="User research"
@@ -63,9 +63,16 @@ export default {
     max-width: 840px;
   }
 }
-.mb-1 {
+.mb-1,
+.m-mb-1 {
   margin-bottom: 2.938rem;
 }
+@media screen and (min-width: 768px) {
+  .m-mb-1 {
+    margin-bottom: 0;
+  }
+}
+
 .mt-1 {
   margin-top: 1rem;
 }

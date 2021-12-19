@@ -1,6 +1,6 @@
 <template>
   <div class="number" :class="color">{{ number }}</div>
-  <Title1 :color="color" :title="title" />
+  <Title1 :color="color" :title="title" :position="position" />
 </template>
 <script>
 import Title1 from "./title.vue";
@@ -9,6 +9,7 @@ export default {
     number: String,
     title: String,
     color: "white" | "accent" | "dark-accent",
+    position: "center" | "left" | "right"
   },
   components: { Title1 }
 }

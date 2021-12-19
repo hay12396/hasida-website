@@ -1,7 +1,7 @@
 <template>
   <div class="resume">
     <ResumeImage />
-    <ResumeInfo />
+    <!-- <ResumeInfo /> -->
   </div>
 </template>
 <script>
@@ -11,8 +11,11 @@ export default {
   components: { ResumeImage, ResumeInfo }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
 .resume {
-  padding: 0 6.25rem;
+  padding: 0 3.25rem;
+  @media screen and (min-width: 768px) {
+    padding: 0 6.25rem 5rem;
+  }
 }
 </style>

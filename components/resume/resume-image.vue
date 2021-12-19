@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <div class="uxui">
-      UX
+      <span>UX</span>
       <span>UI</span>
     </div>
     <div class="info">
@@ -11,9 +11,29 @@
       </div>
       <div class="titles">
         <div class="portfolio">PORTFOLIO</div>
-        <div class="name">Hasida Zohar</div>
-        <div class="title">User Experience Designer</div>
+        <div class="description">
+          Hi, I'm Hasida Zohar
+          <br />a Graphic Designer and UX specialist.
+          <br />I'd like to combine my two biggest loves, design and psychology, to create something amazing with you.
+          <br />Skills: Illustrator, Photoshop, InDesign, Sketch, Figma, Zeplin, Miro, Lookback and more.
+        </div>
       </div>
+    </div>
+
+    <div class="shapes">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+      <div class="circle circle6"></div>
+      <div class="circle circle7"></div>
+
+      <div class="sqaure"></div>
+
+      <div class="triangular triangular1"></div>
+      <div class="triangular triangular2"></div>
+      <div class="triangular triangular3"></div>
     </div>
   </div>
 </template>
@@ -42,16 +62,18 @@ export default {
   }
 
   .uxui {
+    display: none;
     font-size: 21.875rem;
     color: black;
-    span {
+    span:nth-child(2) {
       color: #d1c6fe;
     }
     @media screen and (min-width: 768px) {
+      display: block;
       transform: rotate(90deg);
       position: absolute;
-      top: 250px;
-      left: -27%;
+      top: 500px;
+      left: -20%;
     }
   }
   .info {
@@ -59,18 +81,26 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
     @media screen and (min-width: 768px) {
-      margin-left: 25%;
-      padding-top: 15%;
+      margin-top: 0;
+      margin-left: 20%;
+      padding-top: 272px;
     }
 
     .image {
       position: relative;
+      margin-left: 1rem;
+      @media screen and (min-width: 768px) {
+        margin-left: 0rem;
+      }
       img {
-        width: 340px;
-        height: 400px;
+        width: 100%;
         z-index: 1;
         position: relative;
+        @media screen and (min-width: 768px) {
+          width: 340px;
+        }
       }
       .circle {
         position: absolute;
@@ -86,21 +116,163 @@ export default {
     }
 
     .titles {
-      text-align: left;
-
+      text-align: center;
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
       .portfolio {
-        font-size: 5.625rem;
-        line-height: 7.625rem;
-      }
-      .name {
-        font-size: 3rem;
-        line-height: 4.063rem;
-      }
-      .title {
-        font-size: 2.5rem;
+        font-size: 3.625rem;
+        line-height: 4.625rem;
         font-weight: 300;
-        line-height: 3.375rem;
+        margin-top: 2rem;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+          line-height: 7.625rem;
+          font-size: 5.625rem;
+          margin-top: 0;
+        }
       }
+      .description {
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        max-width: 550px;
+        @media screen and (min-width: 768px) {
+          font-size: 2rem;
+          line-height: 3.064rem;
+        }
+      }
+    }
+  }
+
+  .shapes {
+    display: none;
+    position: absolute;
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 1360px;
+      height: 1360px;
+      top: 0;
+      left: 0;
+      margin-left: -6.25rem;
+      .circle,
+      .square,
+      .triangular {
+        position: absolute;
+      }
+
+      .circle {
+        border-radius: 100%;
+      }
+
+      .triangular {
+        width: 0;
+        height: 0;
+      }
+
+      .circle1 {
+        background-color: #d3e1fdb0;
+
+        top: 36px;
+        left: 37px;
+        width: 132px;
+        height: 132px;
+      }
+
+      .circle2 {
+        background-color: #d3e1fd5e;
+
+        top: 111px;
+        left: 102px;
+        width: 132px;
+        height: 132px;
+      }
+
+      .circle3 {
+        background-color: rgba(209, 198, 254, 0.31);
+
+        top: 71px;
+        left: 421px;
+        width: 172px;
+        height: 172px;
+      }
+
+      .circle4 {
+        background-color: rgba(209, 198, 254, 0.4);
+
+        top: 231px;
+        right: 208px;
+        width: 172px;
+        height: 172px;
+      }
+    }
+
+    .circle5 {
+      background-color: rgba(211, 225, 253, 0.37);
+
+      top: 82px;
+      right: 72px;
+      width: 132px;
+      height: 132px;
+    }
+
+    .circle6 {
+      background-color: #f4f6ff;
+
+      top: 598px;
+      right: 72px;
+      width: 69px;
+      height: 69px;
+    }
+
+    .circle7 {
+      background-color: #f4f6ff;
+
+      top: 272px;
+      left: 69px;
+      width: 69px;
+      height: 69px;
+    }
+
+    .square {
+      background-color: #f4f6ff;
+
+      top: 403px;
+      left: 358px;
+      width: 80px;
+      height: 80px;
+    }
+
+    .triangular1 {
+      transform: rotate(180deg);
+
+      top: 711px;
+      left: 420px;
+
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 70px solid rgba(211, 225, 253, 0.46);
+    }
+
+    .triangular2 {
+      transform: rotate(90deg);
+
+      top: 827px;
+      right: 91px;
+
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-bottom: 140px solid rgba(209, 198, 254, 0.42);
+    }
+
+    .triangular3 {
+      top: 1120px;
+      left: 464px;
+
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 80px solid rgba(211, 225, 253, 0.63);
     }
   }
 }

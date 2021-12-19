@@ -85,7 +85,11 @@ export default {
       top: -72px;
 
       @media screen and (min-width: 768px) {
-        top: -79%;
+        top: -49px;
+      }
+
+      @media screen and (min-width: 1360px) {
+        top: -186px;
       }
     }
   }
@@ -104,6 +108,11 @@ export default {
       @media screen and (min-width: 768px) {
         top: 30%;
         left: 21%;
+      }
+
+      @media screen and (min-width: 1360px) {
+        top: 40%;
+        left: 27%;
       }
     }
   }

@@ -1,11 +1,11 @@
 <template>
   <div class="screens" ref="screens">
-    <NumberedTitle
-      title="Screens"
-      color="white"
-      number="10"
-      v-if="isMobile()"
-    />
+    <div class="title-wrapper" v-if="isMobile()">
+      <NumberedTitle title="Screens" color="white" number="10" />
+    </div>
+    <div class="title-wrapper" v-if="!isMobile()">
+      <div class="title">Screens</div>
+    </div>
     <div class="images screen-images" v-if="!isMobile()">
       <div class="purple purple1"></div>
       <div class="purple purple2"></div>
@@ -17,45 +17,33 @@
         <Image src="/Color_mockups/sign_in.png" alt="Sign in" />
       </div>
 
-      <div class="title title2">
-        <ScreenNumberTitle number="02" title="Sign up" textAlign="left" />
-      </div>
       <div class="image image2">
+        <ScreenNumberTitle number="02" title="Sign up" textAlign="center" />
         <Image src="/Color_mockups/sign_up.png" alt="Sign up" />
       </div>
 
-      <div class="title title3">
-        <ScreenNumberTitle number="03" title="Favorite" textAlign="right" />
-      </div>
       <div class="image image3">
+        <ScreenNumberTitle number="03" title="Favorite" textAlign="center" />
         <Image src="/Color_mockups/choose_your_favorite.png" alt="Favorite" />
       </div>
 
-      <div class="title title4">
-        <ScreenNumberTitle number="04" title="Shake" textAlign="left" />
-      </div>
       <div class="image image4">
+        <ScreenNumberTitle number="04" title="Shake" textAlign="center" />
         <Image src="/Color_mockups/orange.png" alt="Orange shake" />
       </div>
 
-      <div class="title title5">
-        <ScreenNumberTitle number="05" title="Recommended" textAlign="right" />
-      </div>
       <div class="image image5">
+        <ScreenNumberTitle number="05" title="Recommended" textAlign="center" />
         <Image src="/Color_mockups/green_reco.png" alt="Recommended shakes" />
       </div>
 
-      <div class="title title6">
-        <ScreenNumberTitle number="06" title="My cart" textAlign="left" />
-      </div>
       <div class="image image6">
+        <ScreenNumberTitle number="06" title="My cart" textAlign="center" />
         <Image src="/Color_mockups/my_cart.png" alt="My cart" />
       </div>
 
-      <div class="title title7">
-        <ScreenNumberTitle number="07" title="Checkout" textAlign="right" />
-      </div>
       <div class="image image7">
+        <ScreenNumberTitle number="07" title="Checkout" textAlign="center" />
         <Image src="/Color_mockups/check_out.png" alt="Checkout" />
       </div>
     </div>
@@ -71,19 +59,13 @@
               <Image src="/Color_mockups/sign_up.png" alt="Sign up" />
             </div>
             <div class="swiper-slide">
-              <Image
-                src="/Color_mockups/choose_your_favorite.png"
-                alt="Favorite"
-              />
+              <Image src="/Color_mockups/choose_your_favorite.png" alt="Favorite" />
             </div>
             <div class="swiper-slide">
               <Image src="/Color_mockups/orange.png" alt="Orange shake" />
             </div>
             <div class="swiper-slide">
-              <Image
-                src="/Color_mockups/green_reco.png"
-                alt="Recommended shakes"
-              />
+              <Image src="/Color_mockups/green_reco.png" alt="Recommended shakes" />
             </div>
             <div class="swiper-slide">
               <Image src="/Color_mockups/my_cart.png" alt="My cart" />
@@ -155,11 +137,21 @@ export default {
 <style lang="less" scoped>
 .screens {
   position: relative;
-  height: 4200px;
+  height: 4400px;
   background-color: #d3e1fd;
   border-radius: 200px;
   padding: 2.125rem 8.188rem;
   margin-top: -300px;
+
+  .title-wrapper {
+    .title {
+      font-weight: 600;
+      color: white;
+      font-size: 4.375rem;
+      line-height: 5.996rem;
+      text-align: center;
+    }
+  }
 
   .images {
     margin-top: 2rem;
@@ -178,13 +170,13 @@ export default {
       position: absolute;
 
       img {
-        margin-top: 3.25rem;
+        margin-top: 0.5rem;
       }
 
       &.image1 {
         left: 50%;
         transform: translateX(-50%);
-        top: 30px;
+        top: 175px;
       }
     }
 
@@ -194,77 +186,42 @@ export default {
     }
 
     .image2 {
-      top: 1044px;
-      left: 7%;
-    }
-    .title2 {
-      left: 38%;
-      top: 1268px;
+      top: 1189px;
+      left: 13%;
     }
 
     .image3 {
-      top: 1132px;
-      right: 7%;
-    }
-    .title3 {
-      right: 38.5%;
-      top: 1673px;
+      top: 1277px;
+      right: 13%;
     }
 
     .image4 {
-      top: 1975px;
-      left: 7%;
-    }
-    .title4 {
-      left: 38%;
-      top: 2184px;
+      top: 2120px;
+      left: 13%;
     }
 
     .image5 {
-      top: 2157px;
-      right: 7%;
-    }
-    .title5 {
-      right: 38.5%;
-      top: 2710px;
+      top: 2302px;
+      right: 13%;
     }
 
     .image6 {
-      top: 2972px;
-      left: 7%;
-    }
-    .title6 {
-      left: 38%;
-      top: 3176px;
+      top: 3117px;
+      left: 13%;
     }
 
     .image7 {
-      top: 3299px;
-      right: 7%;
+      top: 3444px;
+      right: 13%;
     }
-    .title7 {
-      right: 38.5%;
-      top: 3842px;
-    }
-    @media screen and (min-width: 1360px) {
-      .title2,
-      .title4,
-      .title6 {
-        left: 37%;
-      }
-      .title3,
-      .title5,
-      .title7 {
-        right: 36.5%;
-      }
-    }
+
     .circle {
       position: absolute;
       background-color: #eaf0fc;
       border-radius: 100%;
       width: 600px;
       height: 600px;
-      top: 292px;
+      top: 393px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -277,17 +234,17 @@ export default {
       right: 0;
 
       &.purple1 {
-        top: 761px;
+        top: 806px;
         height: 630px;
       }
 
       &.purple2 {
-        top: 1907px;
+        top: 1952px;
         height: 607px;
       }
 
       &.purple3 {
-        top: 3124px;
+        top: 3280px;
         height: 675px;
       }
     }

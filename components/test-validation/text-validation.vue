@@ -55,7 +55,7 @@ export default {
   margin-top: 4.188rem;
   @media screen and (min-width: 768px) {
     padding: 3.063rem 6.25rem;
-    border-radius: 200px 200px 0px 0px;
+    border-radius: 150px 150px 0px 0px;
   }
   .part1 {
     .info {

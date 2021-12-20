@@ -23,12 +23,14 @@ import Contact from "./components/contact/contact.vue";
 
 export default {
   mounted() {
-    let w = window.screen.width
+    let w = window.screen.width;
+    let old = document.querySelector("meta[name='viewport']");
+    old.content =
+      "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
 
     if (w >= 768 && w < 1360) {
-      let old = document.querySelector("meta[name='viewport']");
       if (old) {
-        old.content = "width=1360,  user-scalable=no";
+        old.content = "width=1360, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
       }
     }
   },
@@ -41,9 +43,9 @@ export default {
     DesignConcepts,
     TestValidation,
     Screens,
-    Contact
-  }
-}
+    Contact,
+  },
+};
 </script>
 
 <style>
@@ -58,7 +60,7 @@ body {
   border: 1px solid #d1c6fe22;
   font-size: 14px;
 }
-body{
+body {
   overflow-x: hidden;
 }
 @media screen and (min-width: 768px) {

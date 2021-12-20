@@ -4234,12 +4234,13 @@ const _sfc_main = {
   mounted() {
     let w = window.screen.width;
     let old = document.querySelector("meta[name='viewport']");
-    old.content =
-      "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
+    if (old) {
+      old.content =
+        "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
 
-    if (w >= 768 && w < 1360) {
-      if (old) {
-        old.content = "width=1360, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
+      if (w >= 768 && w < 1360) {
+        old.content =
+          "width=1360, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
       }
     }
   },

@@ -63,7 +63,7 @@ export default {
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1360px) {
     .phone2 {
       left: 0%;
     }

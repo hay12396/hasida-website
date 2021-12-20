@@ -28,7 +28,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .low-fidelity {
-  margin: 2.688rem 0 3rem;
+  margin: 2.688rem 0 0;
   @media screen and (min-width: 768px) {
     margin: 2.688rem 0 20rem;
   }

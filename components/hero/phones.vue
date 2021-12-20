@@ -2,18 +2,26 @@
   <div class="wrapper">
     <div class="background"></div>
     <div class="phone phone1">
-      <Image src="/Color_mockups/orange_reco.png" alt="Recommended shake" class="img" />
+      <Image
+        src="/Color_mockups/orange_reco.png"
+        alt="Recommended shake"
+        class="img"
+      />
     </div>
     <div class="phone phone2">
-      <Image src="/Color_mockups/choose_your_favorite.png" alt="Favorites" class="img" />
+      <Image
+        src="/Color_mockups/choose_your_favorite.png"
+        alt="Favorites"
+        class="img"
+      />
     </div>
   </div>
 </template>
 <script>
 import Image from "../shared/image.vue";
 export default {
-  components: { Image }
-}
+  components: { Image },
+};
 </script>
 <style lang="less" scoped>
 .wrapper {
@@ -47,6 +55,18 @@ export default {
   .phone2 {
     top: 50%;
     left: 0%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .phone2 {
+      left: 8%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .phone2 {
+      left: 0%;
+    }
   }
 }
 </style>

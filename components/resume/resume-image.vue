@@ -13,7 +13,7 @@
         <div class="portfolio">PORTFOLIO</div>
         <div class="description">
           Hi, I'm Hasida Zohar
-          <br />a Graphic Designer and UX specialist.
+          <br />a Graphic Designer & UX specialist.
           <br />I'd like to combine my two biggest loves, design and psychology, to create something amazing with you.
           <br />Skills: Illustrator, Photoshop, InDesign, Sketch, Figma, Zeplin, Miro, Lookback and more.
         </div>
@@ -190,7 +190,7 @@ export default {
       }
 
       .circle3 {
-        background-color: rgba(209, 198, 254, 0.31);
+        background-color: rgba(209, 198, 254, 0.19);
 
         top: 71px;
         left: 421px;

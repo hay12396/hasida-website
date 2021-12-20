@@ -1,10 +1,7 @@
 <template>
   <div class="screens" ref="screens">
-    <div class="title-wrapper" v-if="isMobile()">
-      <NumberedTitle title="Screens" color="white" number="10" />
-    </div>
-    <div class="title-wrapper" v-if="!isMobile()">
-      <div class="title">Screens</div>
+    <div class="title-wrapper">
+      <Title title="Screens" color="white" position="center" />
     </div>
     <div class="images screen-images" v-if="!isMobile()">
       <div class="purple purple1"></div>
@@ -59,13 +56,19 @@
               <Image src="/Color_mockups/sign_up.png" alt="Sign up" />
             </div>
             <div class="swiper-slide">
-              <Image src="/Color_mockups/choose_your_favorite.png" alt="Favorite" />
+              <Image
+                src="/Color_mockups/choose_your_favorite.png"
+                alt="Favorite"
+              />
             </div>
             <div class="swiper-slide">
               <Image src="/Color_mockups/orange.png" alt="Orange shake" />
             </div>
             <div class="swiper-slide">
-              <Image src="/Color_mockups/green_reco.png" alt="Recommended shakes" />
+              <Image
+                src="/Color_mockups/green_reco.png"
+                alt="Recommended shakes"
+              />
             </div>
             <div class="swiper-slide">
               <Image src="/Color_mockups/my_cart.png" alt="My cart" />
@@ -83,9 +86,9 @@
   </div>
 </template>
 <script>
-import NumberedTitle from "../shared/numbered-title.vue";
 import Image from "../shared/image.vue";
 import ScreenNumberTitle from "./screen-number-title.vue";
+import Title from "../shared/title.vue";
 
 export default {
   mounted() {
@@ -131,7 +134,7 @@ export default {
       );
     },
   },
-  components: { NumberedTitle, Image, ScreenNumberTitle },
+  components: { Image, ScreenNumberTitle, Title },
 };
 </script>
 <style lang="less" scoped>
@@ -144,12 +147,11 @@ export default {
   margin-top: -300px;
 
   .title-wrapper {
-    .title {
-      font-weight: 600;
-      color: white;
-      font-size: 4.375rem;
-      line-height: 5.996rem;
-      text-align: center;
+    @media screen and (min-width: 768px) {
+      h3 {
+        font-size: 4.375rem;
+        line-height: 5.996rem;
+      }
     }
   }
 
@@ -239,13 +241,14 @@ export default {
       }
 
       &.purple2 {
-        top: 1952px;
-        height: 607px;
+        top: 2300px;
+        height: 650px;
       }
 
       &.purple3 {
-        top: 3280px;
+        top: 3763px;
         height: 675px;
+        border-radius: 0px 0px 200px 200px;
       }
     }
   }

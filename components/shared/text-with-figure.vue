@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper" :class="getClass()">
-    <div class="text" :class="titleClass">
+    <div class="text">
       <NumberedTitle :color="color" :number="number" :title="title" />
       <slot></slot>
     </div>
-    <div class="figure">
+    <div class="figure" :style="figureStyle">
       <Image :src="getImageUrl()" :alt="figure" />
     </div>
   </div>
@@ -21,6 +21,7 @@ export default {
     color: String,
     class: String,
     titleClass: String,
+    figureStyle: String,
     figureSide: "left" | "right",
   },
   methods: {
@@ -29,10 +30,9 @@ export default {
     },
     getClass() {
       return this.class + " " + this.figureSide;
-    }
-  }
-
-}
+    },
+  },
+};
 </script>
 <style lang="less" scoped>
 .wrapper {
@@ -49,8 +49,13 @@ export default {
 
   .figure,
   .figure img {
-    width: 252px;
-    height: 256px;
+    width: 121px;
+    height: 116px;
+    @media screen and (min-width: 768px) {
+    width: 182px;
+    height: 192px;
+      
+    }
   }
 }
 

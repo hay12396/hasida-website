@@ -107,7 +107,7 @@ export default {
 
       @media screen and (min-width: 768px) {
         top: 30%;
-        left: 21%;
+        left: 23%;
       }
 
       @media screen and (min-width: 1360px) {

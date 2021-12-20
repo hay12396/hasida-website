@@ -58,6 +58,9 @@ body {
   border: 1px solid #d1c6fe22;
   font-size: 14px;
 }
+body{
+  overflow-x: hidden;
+}
 @media screen and (min-width: 768px) {
   html,
   body {

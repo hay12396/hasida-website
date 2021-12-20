@@ -62,9 +62,9 @@
           </div>
 
           <div class="line2">
-            <Image src="/Crazy_8/1.png" alt="themes and opportunities" />
-            <Image src="/Crazy_8/2.png" alt="themes and opportunities" />
             <Image src="/Crazy_8/3.png" alt="themes and opportunities" />
+            <Image src="/Crazy_8/2.png" alt="themes and opportunities" />
+            <Image src="/Crazy_8/1.png" alt="themes and opportunities" />
           </div>
 
           <div class="arrows">
@@ -165,18 +165,17 @@ export default {
         margin-top: 0;
       }
       .images {
-        margin-top: 4.5rem;
         flex-direction: column;
-
+        @media screen and (min-width: 768px) {
+          margin-top: 4.5rem;
+        }
         .line1 {
           display: flex;
           flex-direction: column;
           @media screen and (min-width: 768px) {
             flex-direction: row;
           }
-          img {
-            border: 5px solid #d4dbf9;
-          }
+
           img:nth-child(2),
           img:nth-child(3) {
             display: none;
@@ -184,38 +183,29 @@ export default {
               display: block;
             }
           }
+          img:first-child {
+            width: 149px;
+            border: 5px solid #d4dbf9;
+          }
           @media screen and (min-width: 768px) {
             img {
               height: 100px;
             }
             img:first-child {
-              max-width: 149px;
+              width: 179px;
             }
             img:nth-child(2) {
-              max-width: 143px;
+              width: 173px;
             }
             img:nth-child(3) {
-              max-width: 143px;
-              border-right: 5px solid #d4dbf9;
+              width: 177px;
             }
-          }
-
-          @media screen and (min-width: 1360px) {
             img {
               border-top: 5px solid #d4dbf9;
               border-left: 5px solid #d4dbf9;
               border-bottom: 5px solid #d4dbf9;
-              border-right: none;
-              height: 121px;
-            }
-            img:first-child {
-              max-width: 179px;
-            }
-            img:nth-child(2) {
-              max-width: 173px;
             }
             img:nth-child(3) {
-              max-width: 173px;
               border-right: 5px solid #d4dbf9;
             }
           }
@@ -231,7 +221,7 @@ export default {
           img:first-child {
             max-width: 183px;
             @media screen and (min-width: 768px) {
-              margin-right: 3.125rem;
+              margin-right: 2.125rem;
             }
           }
           img:nth-child(2) {
@@ -263,7 +253,7 @@ export default {
           }
           img:first-child {
             left: 75px;
-            top: 280px;
+            top: 130px;
             left: 50%;
             transform: translateX(-50%);
 

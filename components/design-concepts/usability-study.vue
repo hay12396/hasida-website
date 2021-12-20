@@ -3,11 +3,20 @@
     <div class="title">Usability study:</div>
     <div class="images">
       <div class="line1">
-        <Image src="/Usability_study/Usability_study_favorite.png" alt="Favorite page study" />
-        <Image src="/Usability_study/Usability_study_reco.png" alt="Recommended page study" />
+        <Image
+          src="/Usability_study/Usability_study_favorite.png"
+          alt="Favorite page study"
+        />
+        <Image
+          src="/Usability_study/Usability_study_reco.png"
+          alt="Recommended page study"
+        />
       </div>
       <div class="line2">
-        <Image src="/Usability_study/Usability_study_live_chat.png" alt="Live chat page study" />
+        <Image
+          src="/Usability_study/Usability_study_live_chat.png"
+          alt="Live chat page study"
+        />
       </div>
     </div>
   </div>
@@ -15,8 +24,8 @@
 <script>
 import Image from "../shared/image.vue";
 export default {
-  components: { Image }
-}
+  components: { Image },
+};
 </script>
 <style lang="less" scoped>
 .usability-study {
@@ -34,12 +43,12 @@ export default {
       img:first-child {
         max-width: 100%;
         @media screen and (min-width: 768px) {
-          margin-right: 4.188rem;
+          margin-right: 3.188rem;
           max-width: 617px;
         }
       }
       img:nth-child(2) {
-        max-width: 100%;
+        max-width: 70%;
         @media screen and (min-width: 768px) {
           max-width: 411px;
         }
@@ -47,7 +56,9 @@ export default {
     }
 
     .line2 {
-      margin-top: 2.688rem;
+      @media screen and (min-width: 768px) {
+        margin-top: 2.688rem;
+      }
 
       img {
         max-width: 100%;

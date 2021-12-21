@@ -96,7 +96,7 @@ function handleError(error, req, res) {
   res.end(html);
 }
 
-const _b6337e = () => import('./chunks/static.mjs');
+const _b6337e = () => import('./chunks/nitro/static.mjs');
 
   const middleware = [
     { route: '/', handle: _b6337e, lazy: true, promisify: true }
@@ -108,7 +108,7 @@ const app = createApp({
 });
 app.use(timingMiddleware);
 app.use(middleware);
-app.use(() => import('./chunks/render.mjs').then((e) => e.renderMiddleware), { lazy: true });
+app.use(() => import('./chunks/app/render.mjs').then((e) => e.renderMiddleware), { lazy: true });
 app.stack;
 const handle = useBase("/", app);
 const localCall = createCall(handle);

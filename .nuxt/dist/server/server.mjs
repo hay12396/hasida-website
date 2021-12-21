@@ -3363,18 +3363,6 @@ const components = {
   "DesignConceptsUsabilityStudy": defineAsyncComponent(() => Promise.resolve().then(function() {
     return usabilityStudy;
   }).then((c) => c.default || c)),
-  "Hero": defineAsyncComponent(() => Promise.resolve().then(function() {
-    return hero;
-  }).then((c) => c.default || c)),
-  "HeroPhones": defineAsyncComponent(() => Promise.resolve().then(function() {
-    return phones;
-  }).then((c) => c.default || c)),
-  "HeroSteps": defineAsyncComponent(() => Promise.resolve().then(function() {
-    return steps;
-  }).then((c) => c.default || c)),
-  "DeskResearch": defineAsyncComponent(() => Promise.resolve().then(function() {
-    return deskResearch;
-  }).then((c) => c.default || c)),
   "ResumeImage": defineAsyncComponent(() => Promise.resolve().then(function() {
     return resumeImage;
   }).then((c) => c.default || c)),
@@ -3383,6 +3371,18 @@ const components = {
   }).then((c) => c.default || c)),
   "Resume": defineAsyncComponent(() => Promise.resolve().then(function() {
     return resume;
+  }).then((c) => c.default || c)),
+  "DeskResearch": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return deskResearch;
+  }).then((c) => c.default || c)),
+  "Hero": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return hero;
+  }).then((c) => c.default || c)),
+  "HeroPhones": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return phones;
+  }).then((c) => c.default || c)),
+  "HeroSteps": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return steps;
   }).then((c) => c.default || c)),
   "ScreensScreenNumberTitle": defineAsyncComponent(() => Promise.resolve().then(function() {
     return screenNumberTitle;
@@ -3512,12 +3512,12 @@ const _sfc_main$o = {
 };
 function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_Image = resolveComponent("Image");
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "hero" }, _attrs))} data-v-7ad558cb><div class="uxui" data-v-7ad558cb><span data-v-7ad558cb>UX</span><span data-v-7ad558cb>UI</span></div><div class="info" data-v-7ad558cb><div class="image" data-v-7ad558cb>`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "hero" }, _attrs))} data-v-b68dfa66><div class="uxui" data-v-b68dfa66><span data-v-b68dfa66>UX</span><span data-v-b68dfa66>UI</span></div><div class="info" data-v-b68dfa66><div class="image" data-v-b68dfa66>`);
   _push(ssrRenderComponent(_component_Image, {
     src: "/shared/me.png",
     alt: "Me"
   }, null, _parent));
-  _push(`</div><div class="titles" data-v-7ad558cb><div class="portfolio" data-v-7ad558cb>PORTFOLIO</div><div class="description" data-v-7ad558cb> Hi, I&#39;m Hasida Zohar <br data-v-7ad558cb>a Graphic Designer &amp; UX specialist. <br data-v-7ad558cb>I&#39;d like to combine my two biggest loves, design and psychology, to create something amazing with you. <br data-v-7ad558cb>Skills: Illustrator, Photoshop, InDesign, Sketch, Figma, Zeplin, Miro, Lookback and more. </div></div></div><div class="shapes" data-v-7ad558cb><div class="circle circle1" data-v-7ad558cb></div><div class="circle circle2" data-v-7ad558cb></div><div class="circle circle3" data-v-7ad558cb></div><div class="circle circle4" data-v-7ad558cb></div><div class="circle circle5" data-v-7ad558cb></div><div class="circle circle6" data-v-7ad558cb></div><div class="circle circle7" data-v-7ad558cb></div><div class="sqaure" data-v-7ad558cb></div><div class="triangular triangular1" data-v-7ad558cb></div><div class="triangular triangular2" data-v-7ad558cb></div><div class="triangular triangular3" data-v-7ad558cb></div></div></div>`);
+  _push(`</div><div class="titles" data-v-b68dfa66><div class="portfolio" data-v-b68dfa66>PORTFOLIO</div><div class="description" data-v-b68dfa66> Hi, I&#39;m Hasida Zohar <br data-v-b68dfa66>a Graphic Designer &amp; UX specialist. <br data-v-b68dfa66>I&#39;d like to combine my two biggest loves, design and psychology, to create something amazing with you. <br data-v-b68dfa66>Skills: Illustrator, Photoshop, InDesign, Sketch, Figma, Zeplin, Miro, Lookback and more. </div></div></div><div class="shapes" data-v-b68dfa66><div class="circle circle1" data-v-b68dfa66></div><div class="circle circle2" data-v-b68dfa66></div><div class="circle circle3" data-v-b68dfa66></div><div class="circle circle4" data-v-b68dfa66></div><div class="circle circle5" data-v-b68dfa66></div><div class="circle circle6" data-v-b68dfa66></div><div class="circle circle7" data-v-b68dfa66></div><div class="sqaure" data-v-b68dfa66></div><div class="triangular triangular1" data-v-b68dfa66></div><div class="triangular triangular2" data-v-b68dfa66></div><div class="triangular triangular3" data-v-b68dfa66></div></div></div>`);
 }
 const _sfc_setup$o = _sfc_main$o.setup;
 _sfc_main$o.setup = (props, ctx) => {
@@ -3525,7 +3525,7 @@ _sfc_main$o.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/resume/resume-image.vue");
   return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
-const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o], ["__scopeId", "data-v-7ad558cb"]]);
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o], ["__scopeId", "data-v-b68dfa66"]]);
 const resumeImage = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",

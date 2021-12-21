@@ -1,1 +1,0 @@
-import{_ as e,c as s,o as _}from"./entry-0fbbb74e.mjs";const t={},r={class:"resume"};function a(o,c,n,p,d,u){return _(),s("div",r)}var m=e(t,[["render",a],["__scopeId","data-v-e9a4f816"]]);export{m as default};

@@ -90,10 +90,11 @@ export default {
     .image {
       position: relative;
       margin-left: 1rem;
-      
+      min-height: 405px;
       @media screen and (min-width: 768px) {
         margin-left: 0rem;
         margin-top: -4rem;
+        min-height: 456px;
       }
       img {
         width: 100%;

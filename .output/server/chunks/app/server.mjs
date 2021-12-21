@@ -3365,15 +3365,6 @@ const components = {
   "DesignConceptsUsabilityStudy": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return usabilityStudy;
   }).then((c) => c.default || c)),
-  "Hero": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return hero;
-  }).then((c) => c.default || c)),
-  "HeroPhones": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return phones;
-  }).then((c) => c.default || c)),
-  "HeroSteps": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return steps;
-  }).then((c) => c.default || c)),
   "DeskResearch": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return deskResearch;
   }).then((c) => c.default || c)),
@@ -3392,17 +3383,14 @@ const components = {
   "Screens": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return screens;
   }).then((c) => c.default || c)),
-  "SharedImage": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return image;
+  "Hero": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return hero;
   }).then((c) => c.default || c)),
-  "SharedNumberedTitle": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return numberedTitle;
+  "HeroPhones": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return phones;
   }).then((c) => c.default || c)),
-  "SharedTextWithFigure": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return textWithFigure;
-  }).then((c) => c.default || c)),
-  "SharedTitle": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return title;
+  "HeroSteps": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return steps;
   }).then((c) => c.default || c)),
   "TestValidationBasicFlow": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return basicFlow;
@@ -3421,6 +3409,18 @@ const components = {
   }).then((c) => c.default || c)),
   "TextAndFiguresSmall": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return textAndFiguresSmall;
+  }).then((c) => c.default || c)),
+  "SharedImage": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return image;
+  }).then((c) => c.default || c)),
+  "SharedNumberedTitle": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return numberedTitle;
+  }).then((c) => c.default || c)),
+  "SharedTextWithFigure": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return textWithFigure;
+  }).then((c) => c.default || c)),
+  "SharedTitle": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return title;
   }).then((c) => c.default || c)),
   "ResumeInfoEducation": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return resumeInfoEducation;

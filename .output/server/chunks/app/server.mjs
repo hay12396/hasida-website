@@ -3365,18 +3365,6 @@ const components = {
   "DesignConceptsUsabilityStudy": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return usabilityStudy;
   }).then((c) => c.default || c)),
-  "ResumeImage": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resumeImage;
-  }).then((c) => c.default || c)),
-  "ResumeNew": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resumeNew$1;
-  }).then((c) => c.default || c)),
-  "Resume": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resume;
-  }).then((c) => c.default || c)),
-  "DeskResearch": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return deskResearch;
-  }).then((c) => c.default || c)),
   "Hero": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return hero;
   }).then((c) => c.default || c)),
@@ -3385,6 +3373,18 @@ const components = {
   }).then((c) => c.default || c)),
   "HeroSteps": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return steps;
+  }).then((c) => c.default || c)),
+  "DeskResearch": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return deskResearch;
+  }).then((c) => c.default || c)),
+  "ResumeImage": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resumeImage;
+  }).then((c) => c.default || c)),
+  "ResumeNew": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resumeNew$1;
+  }).then((c) => c.default || c)),
+  "Resume": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resume;
   }).then((c) => c.default || c)),
   "ScreensScreenNumberTitle": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return screenNumberTitle;

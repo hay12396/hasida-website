@@ -1,6 +1,6 @@
 const client_manifest = {
   "node_modules/nuxt3/dist/app/entry.mjs": {
-    "file": "entry-3857f8f5.mjs",
+    "file": "entry-ba6c5a5b.mjs",
     "src": "node_modules/nuxt3/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -11,7 +11,7 @@ const client_manifest = {
     ]
   },
   "components/resume/resume-new.vue": {
-    "file": "resume-new-eaff40e3.mjs",
+    "file": "resume-new-7b61eed4.mjs",
     "src": "components/resume/resume-new.vue",
     "isDynamicEntry": true,
     "imports": [

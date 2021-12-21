@@ -3363,18 +3363,6 @@ const components = {
   "DesignConceptsUsabilityStudy": defineAsyncComponent(() => Promise.resolve().then(function() {
     return usabilityStudy;
   }).then((c) => c.default || c)),
-  "ResumeImage": defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resumeImage;
-  }).then((c) => c.default || c)),
-  "ResumeNew": defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resumeNew$1;
-  }).then((c) => c.default || c)),
-  "Resume": defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resume;
-  }).then((c) => c.default || c)),
-  "DeskResearch": defineAsyncComponent(() => Promise.resolve().then(function() {
-    return deskResearch;
-  }).then((c) => c.default || c)),
   "Hero": defineAsyncComponent(() => Promise.resolve().then(function() {
     return hero;
   }).then((c) => c.default || c)),
@@ -3383,6 +3371,18 @@ const components = {
   }).then((c) => c.default || c)),
   "HeroSteps": defineAsyncComponent(() => Promise.resolve().then(function() {
     return steps;
+  }).then((c) => c.default || c)),
+  "DeskResearch": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return deskResearch;
+  }).then((c) => c.default || c)),
+  "ResumeImage": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resumeImage;
+  }).then((c) => c.default || c)),
+  "ResumeNew": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resumeNew$1;
+  }).then((c) => c.default || c)),
+  "Resume": defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resume;
   }).then((c) => c.default || c)),
   "ScreensScreenNumberTitle": defineAsyncComponent(() => Promise.resolve().then(function() {
     return screenNumberTitle;

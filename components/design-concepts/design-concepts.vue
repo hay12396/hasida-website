@@ -193,6 +193,7 @@ export default {
             }
             img:first-child {
               width: 179px;
+              border-right: none;
             }
             img:nth-child(2) {
               width: 173px;
@@ -248,7 +249,7 @@ export default {
             position: absolute;
             top: 120px;
             @media screen and (min-width: 1360px) {
-              top: 145px;
+              top: 128px;
             }
           }
           img:first-child {
@@ -263,11 +264,11 @@ export default {
               transform: none;
             }
             @media screen and (min-width: 1360px) {
-              top: 145px;
+              top: 128px;
             }
           }
           img:nth-child(2) {
-            left: 270px;
+            left: 262px;
             display: none;
             @media screen and (min-width: 768px) {
               display: block;

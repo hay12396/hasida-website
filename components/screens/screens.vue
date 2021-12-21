@@ -148,6 +148,7 @@ export default {
 
   .title-wrapper {
     @media screen and (min-width: 768px) {
+      margin-top: 0.5rem;
       h3 {
         font-size: 4.375rem;
         line-height: 5.996rem;
@@ -178,7 +179,7 @@ export default {
       &.image1 {
         left: 50%;
         transform: translateX(-50%);
-        top: 175px;
+        top: 170px;
       }
     }
 

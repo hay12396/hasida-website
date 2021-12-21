@@ -13,10 +13,10 @@ import { error404, errorDev } from '@nuxt/design';
 import { createRenderer } from 'vue-bundle-renderer';
 import devalue from '@nuxt/devalue';
 import defu from 'defu';
-import htmlTemplate from 'file:///C:/Users/hay%20zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/.nuxt/views/document.template.mjs';
+import htmlTemplate from '/Users/hayzohar/Documents/GitHub/hasida-website/.nuxt/views/document.template.mjs';
 import { renderToString as renderToString$2 } from 'vue/server-renderer';
 
-const _runtimeConfig = {"public":{"app":{"basePath":"/","assetsPath":"/_nuxt/","cdnURL":null}},"private":{}};
+const _runtimeConfig = {public:{app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:null}},private:{}};
 for (const type of ["private", "public"]) {
   for (const key in _runtimeConfig[type]) {
     _runtimeConfig[type][key] = destr(process.env[key] || _runtimeConfig[type][key]);
@@ -130,10 +130,10 @@ server.listen(listenAddress, () => {
   });
 });
 
-const STATIC_ASSETS_BASE = "C:/Users/hay zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/dist" + "/" + "1640023177";
+const STATIC_ASSETS_BASE = "/Users/hayzohar/Documents/GitHub/hasida-website/dist" + "/" + "1640086546";
 const PAYLOAD_JS = "/payload.js";
-const getClientManifest = cachedImport(() => import('file:///C:/Users/hay%20zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/.nuxt/dist/server/client.manifest.mjs'));
-const getSSRApp = cachedImport(() => import('file:///C:/Users/hay%20zohar/Documents/hasida-portfolio-website/hasida-portfolio/hasida-website/.nuxt/dist/server/server.mjs'));
+const getClientManifest = cachedImport(() => import('/Users/hayzohar/Documents/GitHub/hasida-website/.nuxt/dist/server/client.manifest.mjs'));
+const getSSRApp = cachedImport(() => import('/Users/hayzohar/Documents/GitHub/hasida-website/.nuxt/dist/server/server.mjs'));
 const publicPath = publicConfig.app && publicConfig.app.assetsPath || "/_nuxt/" || "/_nuxt";
 const getSSRRenderer = cachedResult(async () => {
   const clientManifest = await getClientManifest();

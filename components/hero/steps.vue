@@ -111,8 +111,8 @@ export default {
       }
 
       @media screen and (min-width: 1360px) {
-        top: 40%;
-        left: 27%;
+        top: 49%;
+        left: 28%;
       }
     }
   }

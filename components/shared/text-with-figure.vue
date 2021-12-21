@@ -37,7 +37,6 @@ export default {
 <style lang="less" scoped>
 .wrapper {
   display: flex;
-  justify-content: space-between;
   flex-direction: column-reverse;
   @media screen and (min-width: 768px) {
     flex-direction: row;
@@ -49,12 +48,12 @@ export default {
 
   .figure,
   .figure img {
-    width: 121px;
-    height: 116px;
+    width: 152px;
+    margin-left: -0.5rem;
     @media screen and (min-width: 768px) {
-    width: 182px;
-    height: 192px;
-      
+      width: 182px;
+      height: 192px; 
+      margin-left: 0;
     }
   }
 }

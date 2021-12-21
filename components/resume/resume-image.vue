@@ -7,7 +7,6 @@
     <div class="info">
       <div class="image">
         <Image src="/shared/me.png" alt="Me" />
-        <div class="circle"></div>
       </div>
       <div class="titles">
         <div class="portfolio">PORTFOLIO</div>
@@ -91,8 +90,10 @@ export default {
     .image {
       position: relative;
       margin-left: 1rem;
+      
       @media screen and (min-width: 768px) {
         margin-left: 0rem;
+        margin-top: -4rem;
       }
       img {
         width: 100%;
@@ -101,17 +102,6 @@ export default {
         @media screen and (min-width: 768px) {
           width: 340px;
         }
-      }
-      .circle {
-        position: absolute;
-        left: 47.5%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 340px;
-        height: 340px;
-        background-color: #d1c6fe;
-        border-radius: 100%;
-        z-index: 0;
       }
     }
 

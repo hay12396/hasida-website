@@ -28,11 +28,12 @@ export default {
 .figures-small {
   padding: 0 1.75rem;
   max-width: 100%;
-  margin-top: -2rem;
+  margin-top: -3rem;
+  
   @media screen and (min-width: 768px) {
     padding: 0 6.25rem 0 6.25rem;
     max-width: 720px;
-    margin-top: -1rem;
+    margin-top: 0.5rem;
   }
 }
 b {

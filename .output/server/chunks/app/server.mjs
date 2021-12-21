@@ -121,19 +121,13 @@ class Hookable {
     }
   }
   callHook(name, ...args) {
-    if (this._hooks[name]) {
-      return serialCaller(this._hooks[name], args);
-    }
+    return serialCaller(this._hooks[name] || [], args);
   }
   callHookParallel(name, ...args) {
-    if (this._hooks[name]) {
-      return parallelCaller(this._hooks[name], args);
-    }
+    return parallelCaller(this._hooks[name] || [], args);
   }
   callHookWith(caller, name, ...args) {
-    if (this._hooks[name]) {
-      return caller(this._hooks[name], args);
-    }
+    return caller(this._hooks[name] || [], args);
   }
 }
 function createHooks() {
@@ -3368,21 +3362,6 @@ const components = {
   "DeskResearch": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return deskResearch;
   }).then((c) => c.default || c)),
-  "ResumeImage": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resumeImage;
-  }).then((c) => c.default || c)),
-  "ResumeNew": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resumeNew$1;
-  }).then((c) => c.default || c)),
-  "Resume": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return resume;
-  }).then((c) => c.default || c)),
-  "ScreensScreenNumberTitle": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return screenNumberTitle;
-  }).then((c) => c.default || c)),
-  "Screens": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return screens;
-  }).then((c) => c.default || c)),
   "Hero": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return hero;
   }).then((c) => c.default || c)),
@@ -3392,23 +3371,11 @@ const components = {
   "HeroSteps": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return steps;
   }).then((c) => c.default || c)),
-  "TestValidationBasicFlow": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return basicFlow;
+  "ScreensScreenNumberTitle": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return screenNumberTitle;
   }).then((c) => c.default || c)),
-  "TestValidationLowFidelity": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return lowFidelity;
-  }).then((c) => c.default || c)),
-  "TestValidationTextValidation": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return textValidation;
-  }).then((c) => c.default || c)),
-  "TextAndFiguresPersona": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return persona;
-  }).then((c) => c.default || c)),
-  "TextAndFiguresBig": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return textAndFiguresBig;
-  }).then((c) => c.default || c)),
-  "TextAndFiguresSmall": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
-    return textAndFiguresSmall;
+  "Screens": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return screens;
   }).then((c) => c.default || c)),
   "SharedImage": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return image;
@@ -3421,6 +3388,33 @@ const components = {
   }).then((c) => c.default || c)),
   "SharedTitle": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return title;
+  }).then((c) => c.default || c)),
+  "ResumeImage": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resumeImage;
+  }).then((c) => c.default || c)),
+  "ResumeNew": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resumeNew$1;
+  }).then((c) => c.default || c)),
+  "Resume": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return resume;
+  }).then((c) => c.default || c)),
+  "TextAndFiguresPersona": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return persona;
+  }).then((c) => c.default || c)),
+  "TextAndFiguresBig": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return textAndFiguresBig;
+  }).then((c) => c.default || c)),
+  "TextAndFiguresSmall": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return textAndFiguresSmall;
+  }).then((c) => c.default || c)),
+  "TestValidationBasicFlow": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return basicFlow;
+  }).then((c) => c.default || c)),
+  "TestValidationLowFidelity": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return lowFidelity;
+  }).then((c) => c.default || c)),
+  "TestValidationTextValidation": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
+    return textValidation;
   }).then((c) => c.default || c)),
   "ResumeInfoEducation": vue_cjs_prod.defineAsyncComponent(() => Promise.resolve().then(function() {
     return resumeInfoEducation;
@@ -3512,12 +3506,12 @@ const _sfc_main$o = {
 };
 function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_Image = vue_cjs_prod.resolveComponent("Image");
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "hero" }, _attrs))} data-v-b68dfa66><div class="uxui" data-v-b68dfa66><span data-v-b68dfa66>UX</span><span data-v-b68dfa66>UI</span></div><div class="info" data-v-b68dfa66><div class="image" data-v-b68dfa66>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "hero" }, _attrs))} data-v-7ad558cb><div class="uxui" data-v-7ad558cb><span data-v-7ad558cb>UX</span><span data-v-7ad558cb>UI</span></div><div class="info" data-v-7ad558cb><div class="image" data-v-7ad558cb>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_Image, {
     src: "/shared/me.png",
     alt: "Me"
   }, null, _parent));
-  _push(`</div><div class="titles" data-v-b68dfa66><div class="portfolio" data-v-b68dfa66>PORTFOLIO</div><div class="description" data-v-b68dfa66> Hi, I&#39;m Hasida Zohar <br data-v-b68dfa66>a Graphic Designer &amp; UX specialist. <br data-v-b68dfa66>I&#39;d like to combine my two biggest loves, design and psychology, to create something amazing with you. <br data-v-b68dfa66>Skills: Illustrator, Photoshop, InDesign, Sketch, Figma, Zeplin, Miro, Lookback and more. </div></div></div><div class="shapes" data-v-b68dfa66><div class="circle circle1" data-v-b68dfa66></div><div class="circle circle2" data-v-b68dfa66></div><div class="circle circle3" data-v-b68dfa66></div><div class="circle circle4" data-v-b68dfa66></div><div class="circle circle5" data-v-b68dfa66></div><div class="circle circle6" data-v-b68dfa66></div><div class="circle circle7" data-v-b68dfa66></div><div class="sqaure" data-v-b68dfa66></div><div class="triangular triangular1" data-v-b68dfa66></div><div class="triangular triangular2" data-v-b68dfa66></div><div class="triangular triangular3" data-v-b68dfa66></div></div></div>`);
+  _push(`</div><div class="titles" data-v-7ad558cb><div class="portfolio" data-v-7ad558cb>PORTFOLIO</div><div class="description" data-v-7ad558cb> Hi, I&#39;m Hasida Zohar <br data-v-7ad558cb>a Graphic Designer &amp; UX specialist. <br data-v-7ad558cb>I&#39;d like to combine my two biggest loves, design and psychology, to create something amazing with you. <br data-v-7ad558cb>Skills: Illustrator, Photoshop, InDesign, Sketch, Figma, Zeplin, Miro, Lookback and more. </div></div></div><div class="shapes" data-v-7ad558cb><div class="circle circle1" data-v-7ad558cb></div><div class="circle circle2" data-v-7ad558cb></div><div class="circle circle3" data-v-7ad558cb></div><div class="circle circle4" data-v-7ad558cb></div><div class="circle circle5" data-v-7ad558cb></div><div class="circle circle6" data-v-7ad558cb></div><div class="circle circle7" data-v-7ad558cb></div><div class="sqaure" data-v-7ad558cb></div><div class="triangular triangular1" data-v-7ad558cb></div><div class="triangular triangular2" data-v-7ad558cb></div><div class="triangular triangular3" data-v-7ad558cb></div></div></div>`);
 }
 const _sfc_setup$o = _sfc_main$o.setup;
 _sfc_main$o.setup = (props, ctx) => {
@@ -3525,7 +3519,7 @@ _sfc_main$o.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/resume/resume-image.vue");
   return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
-const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o], ["__scopeId", "data-v-b68dfa66"]]);
+const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o], ["__scopeId", "data-v-7ad558cb"]]);
 const resumeImage = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",

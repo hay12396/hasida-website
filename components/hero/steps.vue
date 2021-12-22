@@ -3,9 +3,14 @@
     <div class="step-1">
       <div class="step-number">01</div>
       <NumberedTitle number="01" title="About project" color="white" />
-      <div
-        class="explanation"
-      >Today, trainees purchase a package (2-3 months) of protein in one flavor that they must use for a long time and they also need to prepare it at home (there is no option to prepare it before). We solve this problem by an app where you can order a protein shake up to the training place with a wide range of flavors so that the trainee can choose a different smoothie each day and thus vary the flavors.</div>
+      <div class="explanation">
+        Today, trainees purchase a package (2-3 months) of protein in one flavor
+        that they must use for a long time and they also need to prepare it at
+        home (there is no option to prepare it before). We solve this problem by
+        an app where you can order a protein shake up to the training place with
+        a wide range of flavors so that the trainee can choose a different
+        smoothie each day and thus vary the flavors.
+      </div>
     </div>
     <div class="step-2">
       <div class="step-number">02</div>
@@ -29,13 +34,19 @@
           <div>
             <b>Inspiration</b>
           </div>
-          <div>User research Interview & questionare Hypothesis generation Secondary research Analogous Inspiration</div>
+          <div>
+            User research Interview & questionare Hypothesis generation
+            Secondary research Analogous Inspiration
+          </div>
         </div>
         <div class="column">
           <div>
             <b>Ideation</b>
           </div>
-          <div>Braindumping Creating insights How Might We Top 5 considartions Creating guidlines Rapid prototyping</div>
+          <div>
+            Braindumping Creating insights How Might We Top 5 considartions
+            Creating guidlines Rapid prototyping
+          </div>
         </div>
         <div class="column">
           <div>
@@ -51,8 +62,8 @@
 import Title1 from "../shared/title.vue";
 import NumberedTitle from "../shared/numbered-title.vue";
 export default {
-  components: { Title1, NumberedTitle }
-}
+  components: { Title1, NumberedTitle },
+};
 </script>
 <style lang="less">
 .steps {
@@ -102,7 +113,7 @@ export default {
       margin-bottom: 9.375rem;
     }
     .step-number {
-      left: -9%;
+      left: -4%;
       top: -72px;
 
       @media screen and (min-width: 768px) {
@@ -132,7 +143,7 @@ export default {
       width: 70%;
     }
     .step-number {
-      left: -9%;
+      left: -4%;
       top: -72px;
 
       @media screen and (min-width: 768px) {

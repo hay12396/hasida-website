@@ -114,5 +114,9 @@ export default {
   font-weight: 400;
   line-height: 1.703rem;
   color: #666666;
+  margin-block-end: 0;
+  @media screen and (min-width: 768px) {
+    margin-block-end: 1em;
+  }
 }
 </style>

@@ -1,5 +1,11 @@
 <template>
   <div class="hero">
+    <div class="website-project-figma-link">
+      <FigmaLink @click="openWebsiteProject">
+        Website <br />
+        <b>Figma</b> project
+      </FigmaLink>
+    </div>
     <div class="uxui">
       <span>UX</span>
       <span>UI</span>
@@ -12,9 +18,11 @@
         <div class="portfolio">PORTFOLIO</div>
         <div class="description">
           Hi, I'm Hasida Zohar
-          <br />a Graphic Designer & UX specialist.
-          <br />I'd like to combine my two biggest loves, design and psychology, to create something amazing with you.
-          <br />Skills: Illustrator, Photoshop, InDesign, Sketch, Figma, Zeplin, Miro, Lookback and more.
+          <br />a Graphic Designer &<br class="mobile-only" />
+          UX specialist. <br />I'd like to combine my two biggest loves, design
+          and psychology, to create something amazing with you. <br />Skills:
+          Illustrator, Photoshop, InDesign, Sketch, Figma, Zeplin, Miro,
+          Lookback and more.
         </div>
       </div>
     </div>
@@ -38,9 +46,18 @@
 </template>
 <script>
 import Image from "../shared/image.vue";
+import FigmaLink from "../shared/figma-link.vue";
 export default {
-  components: { Image }
-}
+  components: { Image, FigmaLink },
+  methods: {
+    openWebsiteProject() {
+      window.open(
+        "https://www.figma.com/file/1oEBI4jpdVJlQS7cBGkBB6/Final-Project?node-id=536%3A33975",
+        "_blank"
+      );
+    },
+  },
+};
 </script>
 <style scoped lang="less">
 .hero {
@@ -114,8 +131,8 @@ export default {
       .portfolio {
         font-size: 3.625rem;
         line-height: 4.625rem;
-        font-weight: 300;
-        margin-top: 2rem;
+        font-weight: 400;
+        margin-top: -3rem;
         text-align: center;
         @media screen and (min-width: 768px) {
           line-height: 7.625rem;
@@ -264,6 +281,27 @@ export default {
       border-left: 40px solid transparent;
       border-right: 40px solid transparent;
       border-bottom: 80px solid rgba(211, 225, 253, 0.63);
+    }
+  }
+
+  .website-project-figma-link {
+    position: absolute;
+    top: 1rem;
+    left: -3rem;
+    z-index: 10;
+
+    color: #9e95bf;
+    padding: 1rem;
+
+    @media screen and (min-width: 768px) {
+      left: 70px;
+      top: 390px;
+    }
+  }
+
+  .mobile-only {
+    @media screen and (min-width: 768px) {
+      display: none;
     }
   }
 }

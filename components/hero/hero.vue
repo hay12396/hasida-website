@@ -7,6 +7,19 @@
         <br />
         <b>discover</b> a new taste every day.
       </div>
+
+      <div class="figma-links">
+        <FigmaLink @click="openProject">
+          Open the <br />
+          <b>Figma</b> project
+        </FigmaLink>
+        <div class="second-link">
+          <FigmaLink @click="openClickable">
+            Clickable <br />
+            <b>Figma</b> project
+          </FigmaLink>
+        </div>
+      </div>
     </div>
     <Steps />
     <div class="phones-wrapper">
@@ -17,16 +30,32 @@
 <script>
 import Steps from "./steps.vue";
 import Phones from "./phones.vue";
+import Image from "../shared/image.vue";
+import FigmaLink from "../shared/figma-link.vue";
 
 export default {
-  components: { Steps, Phones }
-}
+  components: { Steps, Phones, Image, FigmaLink },
+  methods: {
+    openClickable() {
+      window.open(
+        "https://www.figma.com/proto/1oEBI4jpdVJlQS7cBGkBB6/Final-Project?node-id=536%3A34034&scaling=min-zoom&page-id=536%3A33975&starting-point-node-id=536%3A34034&show-proto-sidebar=1",
+        "_blank"
+      );
+    },
+    openProject() {
+      window.open(
+        "https://www.figma.com/file/1oEBI4jpdVJlQS7cBGkBB6/Final-Project?node-id=703%3A40528",
+        "_blank"
+      );
+    },
+  },
+};
 </script>
 <style scoped lang="less">
 .wrapper {
   position: relative;
   @media screen and (min-width: 768px) {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   .hero {
     padding: 1.5rem 1.5rem 0;
@@ -46,10 +75,7 @@ export default {
       color: #9e95bf;
       font-size: 1.5rem;
       line-height: 2.043rem;
-      margin-bottom: 3rem;
-      @media screen and (min-width: 768px) {
-        margin-bottom: 9rem;
-      }
+      margin-bottom: 2rem;
 
       b {
         font-weight: 700;
@@ -64,6 +90,16 @@ export default {
     display: none;
     @media screen and (min-width: 768px) {
       display: block;
+    }
+  }
+
+  .figma-links {
+    color: #9e95bf;
+    display: flex;
+    margin-bottom: 2rem;
+
+    .second-link {
+      margin-left: 2rem;
     }
   }
 }

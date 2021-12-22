@@ -56,8 +56,11 @@ export default {
     }
 
     .line2 {
+      margin-top: -3rem;
+      margin-bottom: -4rem;
       @media screen and (min-width: 768px) {
         margin-top: 2.688rem;
+        margin-bottom: 0;
       }
 
       img {

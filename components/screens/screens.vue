@@ -272,5 +272,9 @@ export default {
       display: none;
     }
   }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
 }
 </style>

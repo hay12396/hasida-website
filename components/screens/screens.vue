@@ -276,5 +276,13 @@ export default {
   .swiper-pagination {
     bottom: 0;
   }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
 }
 </style>

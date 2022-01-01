@@ -52,7 +52,7 @@ export default {
   methods: {
     openWebsiteProject() {
       window.open(
-        "https://www.figma.com/file/1oEBI4jpdVJlQS7cBGkBB6/Final-Project?node-id=536%3A33975",
+        "https://www.figma.com/file/1oEBI4jpdVJlQS7cBGkBB6/Final-Project?node-id=703%3A40528",
         "_blank"
       );
     },

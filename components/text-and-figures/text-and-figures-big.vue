@@ -50,6 +50,7 @@
       number="06"
       title="User research"
       color="dark-accent"
+      :figureStyle="getThirdFigureStyle()"
     >
       <div class="mx-1 description">
         Conducting user research helps in understanding user’s needs,
@@ -67,10 +68,13 @@ export default {
   components: { TextWithFigure },
   methods: {
     getFirstFigureStyle() {
-      return this.isMobile() ? "" : "margin-top: 1rem";
+      return this.isMobile() ? "" : "margin-top: 5rem;margin-left: 2rem;";
     },
     getSecondFigureStyle() {
-      return this.isMobile() ? "" : "margin-right: 2rem";
+      return this.isMobile() ? "" : "margin-top: 3rem;margin-right: 2rem";
+    },
+    getThirdFigureStyle() {
+      return this.isMobile() ? "" : "margin-top: 3rem;";
     },
     isMobile() {
       return (

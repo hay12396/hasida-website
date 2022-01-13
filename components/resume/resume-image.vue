@@ -35,8 +35,10 @@
       <div class="circle circle5"></div>
       <div class="circle circle6"></div>
       <div class="circle circle7"></div>
+      <div class="circle circle8"></div>
 
-      <div class="sqaure"></div>
+      <div class="square"></div>
+      <div class="square2"></div>
 
       <div class="triangular triangular1"></div>
       <div class="triangular triangular2"></div>
@@ -110,23 +112,26 @@ export default {
       min-height: 405px;
       @media screen and (min-width: 768px) {
         margin-left: 0rem;
-        margin-top: -4rem;
-        min-height: 456px;
+        min-height: 630px;
       }
       img {
         width: 100%;
         z-index: 1;
         position: relative;
         @media screen and (min-width: 768px) {
-          width: 340px;
+          width: 473px;
+          height: auto;
+          max-height: initial;
         }
       }
     }
 
     .titles {
+      margin-top: 0;
       text-align: center;
       @media screen and (min-width: 768px) {
         text-align: left;
+      margin-top: -2rem;
       }
       .portfolio {
         font-size: 3.625rem;
@@ -209,8 +214,8 @@ export default {
       .circle4 {
         background-color: rgba(209, 198, 254, 0.4);
 
-        top: 231px;
-        right: 208px;
+        top: 153px;
+        right: 169px;
         width: 172px;
         height: 172px;
       }
@@ -219,8 +224,8 @@ export default {
     .circle5 {
       background-color: rgba(211, 225, 253, 0.37);
 
-      top: 82px;
-      right: 72px;
+      top: 59px;
+      right: 26px;
       width: 132px;
       height: 132px;
     }
@@ -243,13 +248,31 @@ export default {
       height: 69px;
     }
 
+    .circle8 {
+      top: 972px;
+      right: 250px;
+      width: 260px;
+      height: 260.63px;
+
+      background: rgba(211, 225, 253, 0.41);
+    }
+
     .square {
       background-color: #f4f6ff;
 
-      top: 403px;
-      left: 358px;
+      top: 364px;
+      left: 433px;
       width: 80px;
       height: 80px;
+    }
+
+    .square2 {
+      top: 1273px;
+      left: 100px;
+      width: 141px;
+      height: 47.11px;
+      background: #f4f6ff;
+      position: absolute;
     }
 
     .triangular1 {

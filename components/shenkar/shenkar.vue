@@ -46,16 +46,25 @@ export default {
 
 <style lang="less" scoped>
 .wrapper {
-  margin: 2rem 0;
+  margin: 1rem 0;
+  @media screen and (min-width: 768px) {
+    margin: 2rem 0;
+  }
   padding: 0 1.75rem;
 
   .images {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    @media screen and (min-width: 768px) {
+      margin-top: 2rem;
+    }
   }
 
   .business {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
     img {
       width: 100%;
     }
@@ -66,11 +75,17 @@ export default {
   }
 
   .winera_cards {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
     img:first-child {
       width: 50%;
       flex: 1 1 50%;
-      margin-right: 2rem;
+      margin-right: 1rem;
+      @media screen and (min-width: 768px) {
+        margin-right: 2rem;
+      }
     }
     img:nth-child(2) {
       width: 42%;
@@ -79,29 +94,45 @@ export default {
   }
 
   .posters {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
   }
 
   .music {
     .two_cups {
       position: relative;
       background-color: #d4dbf9;
-      margin-bottom: 2rem;
-
+      margin-bottom: 1rem;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 2rem;
+      }
       img:nth-child(2) {
         position: absolute;
-        left: 1rem;
-        top: 1rem;
+        left: 0.5rem;
+        top: 0.5rem;
         width: 18%;
+
+        @media screen and (min-width: 768px) {
+          top: 1rem;
+          left: 1rem;
+        }
       }
     }
 
     .food {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 2rem;
+      }
       img:first-child {
         width: 37.6%;
         flex: 1 1 37.6%;
-        margin-right: 2rem;
+        margin-right: 1rem;
+        @media screen and (min-width: 768px) {
+          margin-right: 2rem;
+        }
         background-color: #d3e1fc;
       }
       img:nth-child(2) {
@@ -112,11 +143,17 @@ export default {
     }
 
     .fredy {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 2rem;
+      }
       img:first-child {
         width: 50%;
         flex: 1 1 50%;
-        margin-right: 2rem;
+        margin-right: 1rem;
+        @media screen and (min-width: 768px) {
+          margin-right: 2rem;
+        }
         background-color: #d3e1fc;
       }
       img:nth-child(2) {

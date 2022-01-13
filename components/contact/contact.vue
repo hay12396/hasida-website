@@ -26,13 +26,13 @@ export default {
   components: { Title, Image },
   methods: {
     call() {
-      window.open("tel:0507475755");
+      window.open("tel:0527475755");
     },
     openLinkedIn() {
       window.open("https://www.linkedin.com/in/hasida-zohar/", "_blank");
     },
     openMail() {
-      window.open("mailto:hasida-zohar@gmail.com");
+      window.open("mailto:hasida.zohar@gmail.com");
     },
   },
 };

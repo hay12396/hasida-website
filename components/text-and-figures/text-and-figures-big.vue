@@ -1,5 +1,5 @@
 <template>
-  <div class="figures-wrapper">
+  <div class="figures-wrapper" :key="hackForRerendering">
     <TextWithFigure
       class="mb-1"
       figure="persona_challenge"
@@ -65,10 +65,20 @@
 <script>
 import TextWithFigure from "../shared/text-with-figure.vue";
 export default {
+  data: ()=>{
+    return {
+      hackForRerendering: ''
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.hackForRerendering = "."
+    });
+  },
   components: { TextWithFigure },
   methods: {
     getFirstFigureStyle() {
-      return this.isMobile() ? "" : "margin-top: 5rem;margin-left: 2rem;";
+      return this.isMobile() ? "margin-top:1.5rem" : "margin-top: 5rem;margin-left: 2rem;";
     },
     getSecondFigureStyle() {
       return this.isMobile() ? "" : "margin-top: 3rem;margin-right: 2rem";

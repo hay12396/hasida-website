@@ -4188,10 +4188,20 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/shared/text-with-figure.vue");
 
 const _sfc_main = {
+  data: ()=>{
+    return {
+      hackForRerendering: ''
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.hackForRerendering = "."
+    });
+  },
   components: { TextWithFigure: __vite_ssr_import_1__.default },
   methods: {
     getFirstFigureStyle() {
-      return this.isMobile() ? "" : "margin-top: 5rem;margin-left: 2rem;";
+      return this.isMobile() ? "margin-top:1.5rem" : "margin-top: 5rem;margin-left: 2rem;";
     },
     getSecondFigureStyle() {
       return this.isMobile() ? "" : "margin-top: 3rem;margin-right: 2rem";
@@ -4218,7 +4228,10 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/serve
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_TextWithFigure = __vite_ssr_import_2__.resolveComponent("TextWithFigure")
 
-  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "figures-wrapper" }, _attrs))} data-v-6c8a7c57>`)
+  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({
+    class: "figures-wrapper",
+    key: _ctx.hackForRerendering
+  }, _attrs))} data-v-6c8a7c57>`)
   _push(__vite_ssr_import_3__.ssrRenderComponent(_component_TextWithFigure, {
     class: "mb-1",
     figure: "persona_challenge",

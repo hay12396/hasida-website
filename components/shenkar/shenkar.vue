@@ -7,14 +7,14 @@
       </div>
       <div class="line winera_cards">
         <Image src="/shenkar/envelop_card_purpel.png" alt="envelop" />
-        <Image src="/shenkar/Right_bug_purpul.png" alt="envelop" />
+        <Image src="/shenkar/Right_bug_purpul.png" alt="bag" />
       </div>
       <div class="posters">
-        <Image src="/shenkar/posters_winera.png" alt="envelop" />
+        <Image src="/shenkar/posters_winera.png" alt="poster" />
       </div>
       <div class="music">
         <div class="two_cups">
-          <Image src="/shenkar/2_cups.png" alt="envelop" />
+          <Image src="/shenkar/2_cups.png" alt="cups" />
         </div>
         <div class="line food">
           <Image src="/shenkar/Popcorn.png" alt="Popcorn" />
@@ -25,7 +25,7 @@
             src="/shenkar/A5-Magazine-MockUp.png"
             alt="A5-Magazine-MockUp"
           />
-          <Image src="/shenkar/Bug.png" alt="Bug" />
+          <Image src="/shenkar/Bug.png" alt="bag" />
         </div>
         <div class="lines">
           <Image src="/shenkar/Moovies.png" alt="Moovies" />
@@ -65,8 +65,8 @@ export default {
   .winera_cards {
     margin-bottom: 2rem;
     img:first-child {
-      width: 55.5%;
-      flex: 1 1 55.5%;
+      width: 50%;
+      flex: 1 1 50%;
       margin-right: 2rem;
     }
     img:nth-child(2) {
@@ -95,8 +95,8 @@ export default {
         background-color: #d3e1fc;
       }
       img:nth-child(2) {
-        width: 59.18%;
-        flex: 1 1 59.18%;
+        width: 55%;
+        flex: 1 1 55%;
         margin-right: 2rem;
         background-color: #cee2fd;
       }
@@ -105,8 +105,8 @@ export default {
     .fredy {
       margin-bottom: 2rem;
       img:first-child {
-        width: 54.52%;
-        flex: 1 1 54.52%;
+        width: 50%;
+        flex: 1 1 50%;
         margin-right: 2rem;
         background-color: #d3e1fc;
       }
@@ -122,6 +122,29 @@ export default {
   @media screen and (min-width: 768px) {
     .wrapper {
       padding: 0 100px;
+      .winera_cards {
+        margin-bottom: 2rem;
+        img:first-child {
+          width: 55.5%;
+          flex: 1 1 55.5%;
+        }
+      }
+
+      .food {
+        margin-bottom: 2rem;
+        img:nth-child(2) {
+          width: 59.18%;
+          flex: 1 1 59.18%;
+        }
+      }
+
+      .fredy {
+        margin-bottom: 2rem;
+        img:first-child {
+          width: 54.52%;
+          flex: 1 1 54.52%;
+        }
+      }
     }
   }
 }

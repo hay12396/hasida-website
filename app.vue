@@ -7,7 +7,8 @@
   <DesignConcepts />
   <TestValidation />
   <Screens />
-  <!-- <Contact /> -->
+  <Shenkar />
+  <Contact />
 </template>
 
 <script>
@@ -20,6 +21,7 @@ import DesignConcepts from "./components/design-concepts/design-concepts.vue";
 import TestValidation from "./components/test-validation/text-validation.vue";
 import Screens from "./components/screens/screens.vue";
 import Contact from "./components/contact/contact.vue";
+import Shenkar from "./components/shenkar/shenkar.vue";
 
 export default {
   mounted() {
@@ -45,12 +47,13 @@ export default {
     TestValidation,
     Screens,
     Contact,
+    Shenkar,
   },
 };
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Open%20Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open%20Sans&display=swap");
 * {
   font-family: "Open Sans";
 }

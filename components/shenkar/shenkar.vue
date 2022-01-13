@@ -15,6 +15,7 @@
       <div class="music">
         <div class="two_cups">
           <Image src="/shenkar/2_cups.png" alt="cups" />
+          <Image src="/shenkar/music-logo.png" alt="music logo" />
         </div>
         <div class="line food">
           <Image src="/shenkar/Popcorn.png" alt="Popcorn" />
@@ -48,13 +49,15 @@ export default {
   margin: 2rem 0;
   padding: 0 1.75rem;
 
+  .images {
+    margin-top: 2rem;
+  }
+
   .business {
     width: 100%;
-    height: calc(min(100vw, 1360px - 200px) * 0.5332);
     margin-bottom: 2rem;
     img {
       width: 100%;
-      height: calc(min(100vw, 1360px - 200px) * 0.5332);
     }
   }
 
@@ -72,7 +75,6 @@ export default {
     img:nth-child(2) {
       width: 42%;
       flex: 1 1 42%;
-      margin-right: 2rem;
     }
   }
 
@@ -82,8 +84,16 @@ export default {
 
   .music {
     .two_cups {
+      position: relative;
       background-color: #d4dbf9;
       margin-bottom: 2rem;
+
+      img:nth-child(2) {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        width: 18%;
+      }
     }
 
     .food {
@@ -97,7 +107,6 @@ export default {
       img:nth-child(2) {
         width: 55%;
         flex: 1 1 55%;
-        margin-right: 2rem;
         background-color: #cee2fd;
       }
     }
@@ -113,7 +122,6 @@ export default {
       img:nth-child(2) {
         width: 42.27%;
         flex: 1 1 42.27%;
-        margin-right: 2rem;
         background-color: #cee2fd;
       }
     }

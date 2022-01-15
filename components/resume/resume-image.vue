@@ -127,11 +127,13 @@ export default {
     }
 
     .titles {
+      position: relative;
+      z-index: 1;
       margin-top: 0;
       text-align: center;
       @media screen and (min-width: 768px) {
         text-align: left;
-      margin-top: -2rem;
+        margin-top: -5rem;
       }
       .portfolio {
         font-size: 3.625rem;
@@ -249,8 +251,8 @@ export default {
     }
 
     .circle8 {
-      top: 972px;
-      right: 250px;
+      top: 895px;
+      right: 316px;
       width: 260px;
       height: 260.63px;
 
@@ -260,8 +262,8 @@ export default {
     .square {
       background-color: #f4f6ff;
 
-      top: 364px;
-      left: 433px;
+      top: 382px;
+      left: 385px;
       width: 80px;
       height: 80px;
     }
@@ -278,7 +280,7 @@ export default {
     .triangular1 {
       transform: rotate(180deg);
 
-      top: 711px;
+      top: 717px;
       left: 420px;
 
       border-left: 40px solid transparent;

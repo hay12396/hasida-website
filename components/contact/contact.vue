@@ -52,7 +52,7 @@ export default {
     justify-content: center;
     margin-bottom: 115px;
     img {
-      width: 22%;
+      width: 16%;
       margin-right: 2rem;
       cursor: pointer;
     }

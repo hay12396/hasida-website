@@ -54,7 +54,7 @@ export default {
 .wrapper {
   position: relative;
   @media screen and (min-width: 768px) {
-    margin-top: 6rem;
+    margin-top: -239px;
   }
   .hero {
     padding: 1.5rem 1.5rem 0;
@@ -93,7 +93,10 @@ export default {
   }
 
   .figma-links {
-    color: #9e95bf;
+    color: #a259ff;
+    @media screen and (min-width: 768px) {
+      color: #9e95bf;
+    }
     display: flex;
     margin-bottom: 2rem;
 

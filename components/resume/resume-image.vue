@@ -11,9 +11,6 @@
       <span>UI</span>
     </div>
     <div class="info">
-      <div class="image">
-        <Image src="/shared/me.png" alt="Me" />
-      </div>
       <div class="titles">
         <div class="portfolio">PORTFOLIO</div>
         <div class="description">
@@ -42,7 +39,6 @@
 
       <div class="triangular triangular1"></div>
       <div class="triangular triangular2"></div>
-      <div class="triangular triangular3"></div>
     </div>
   </div>
 </template>
@@ -90,8 +86,9 @@ export default {
       display: block;
       transform: rotate(90deg);
       position: absolute;
-      top: 500px;
+      top: 303px;
       left: -20%;
+      z-index: 10;
     }
   }
   .info {
@@ -99,31 +96,11 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 11rem;
     @media screen and (min-width: 768px) {
       margin-top: 0;
       margin-left: 20%;
-      padding-top: 272px;
-    }
-
-    .image {
-      position: relative;
-      margin-left: 1rem;
-      min-height: 405px;
-      @media screen and (min-width: 768px) {
-        margin-left: 0rem;
-        min-height: 630px;
-      }
-      img {
-        width: 100%;
-        z-index: 1;
-        position: relative;
-        @media screen and (min-width: 768px) {
-          width: 473px;
-          height: auto;
-          max-height: initial;
-        }
-      }
+      justify-content: flex-start;
     }
 
     .titles {
@@ -133,7 +110,7 @@ export default {
       text-align: center;
       @media screen and (min-width: 768px) {
         text-align: left;
-        margin-top: -5rem;
+        margin-top: 7rem;
       }
       .portfolio {
         font-size: 3.625rem;
@@ -298,29 +275,20 @@ export default {
       border-right: 70px solid transparent;
       border-bottom: 140px solid rgba(209, 198, 254, 0.42);
     }
-
-    .triangular3 {
-      top: 1120px;
-      left: 464px;
-
-      border-left: 40px solid transparent;
-      border-right: 40px solid transparent;
-      border-bottom: 80px solid rgba(211, 225, 253, 0.63);
-    }
   }
 
   .website-project-figma-link {
     position: absolute;
     top: 1rem;
     left: -3rem;
-    z-index: 10;
-
-    color: #9e95bf;
+    z-index: 15;
+    color: #a259ff;
     padding: 1rem;
 
     @media screen and (min-width: 768px) {
+      color: #9e95bf;
       left: 70px;
-      top: 390px;
+      top: 207px;
     }
   }
 

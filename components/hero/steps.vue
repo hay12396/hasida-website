@@ -77,12 +77,16 @@ export default {
   }
 
   .step-number {
+    display: none;
     position: absolute;
     font-size: 15.625rem;
     color: rgba(255, 255, 255, 0.2);
     transform: matrix(-1, 0, 0, 1, 0, 0);
     line-height: 21.25rem;
     font-weight: bold;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
 
   .step-1 {

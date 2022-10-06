@@ -67,7 +67,7 @@ export default {
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    height: 1500px;
+    height: 1450px;
   }
 
   >div {
@@ -77,15 +77,6 @@ export default {
       flex: 1 0 50%;
     }
   }
-
-   .me {
-      position: absolute;
-      left: 53%;
-      transform: translate(-50%, 0);
-      img {
-        width: 37vw;
-      }
-    }
 
   .uxui {
     display: none;
@@ -113,10 +104,18 @@ export default {
     align-items: center;
     margin-top: 11rem;
 
+    img {
+      width: 50vw;
+    }
+
     @media screen and (min-width: 768px) {
       margin-top: 0;
       margin-left: 20%;
       justify-content: flex-start;
+
+      img {
+        width: 37vw;
+      }
     }
 
     .titles {
@@ -127,7 +126,7 @@ export default {
 
       @media screen and (min-width: 768px) {
         text-align: left;
-        margin-top: -6rem;
+        margin-top: -2rem;
       }
 
       .portfolio {

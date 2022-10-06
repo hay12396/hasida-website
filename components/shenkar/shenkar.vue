@@ -21,15 +21,35 @@
           <Image src="/shenkar/Popcorn.png" alt="Popcorn" />
           <Image src="/shenkar/Humburger.png" alt="Humburger" />
         </div>
-        <div class="line fredy">
-          <Image
-            src="/shenkar/A5-Magazine-MockUp.png"
-            alt="A5-Magazine-MockUp"
-          />
+        <div class="line double-image">
+          <Image src="/shenkar/A5-Magazine-MockUp.png" alt="A5-Magazine-MockUp" />
           <Image src="/shenkar/Bug.png" alt="bag" />
         </div>
-        <div class="lines">
+        <div class="line">
           <Image src="/shenkar/Moovies.png" alt="Moovies" />
+        </div>
+        <div class="line">
+          <Image src="/shenkar/la_maline_1.jpg" alt="La Maline" />
+        </div>
+        <div class="line">
+          <Image src="/shenkar/la_maline_2.jpg" alt="La Maline stickers" />
+        </div>
+        <div class="line">
+          <Image src="/shenkar/zap_1.jpg" alt="zap" />
+        </div>
+        <div class="line zap double-image">
+          <Image src="/shenkar/zap_2.jpg" alt="zap" />
+          <Image src="/shenkar/zap_3.jpg" alt="zap" />
+        </div>
+        <div class="line">
+          <Image src="/shenkar/baby_spa_1.jpg" alt="baby spa" />
+        </div>
+        <div class="line double-image">
+          <Image src="/shenkar/baby_spa_2.jpg" alt="baby spa" />
+          <Image src="/shenkar/smart_kids_1.jpg" alt="smart kids" />
+        </div>
+        <div class="line full">
+          <Image src="/shenkar/photoshop.jpg" alt="photoshop" />
         </div>
       </div>
     </div>
@@ -47,13 +67,16 @@ export default {
 <style lang="less" scoped>
 .wrapper {
   margin: 1rem 0;
+  padding: 0 0.75rem;
+
   @media screen and (min-width: 768px) {
     margin: 2rem 0;
+    padding: 0;
   }
-  padding: 0 1.75rem;
 
   .images {
     margin-top: 1rem;
+
     @media screen and (min-width: 768px) {
       margin-top: 2rem;
     }
@@ -62,9 +85,11 @@ export default {
   .business {
     width: 100%;
     margin-bottom: 1rem;
+
     @media screen and (min-width: 768px) {
       margin-bottom: 2rem;
     }
+
     img {
       width: 100%;
     }
@@ -72,21 +97,30 @@ export default {
 
   .line {
     display: flex;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
   }
 
   .winera_cards {
     margin-bottom: 1rem;
+
     @media screen and (min-width: 768px) {
       margin-bottom: 2rem;
     }
+
     img:first-child {
       width: 50%;
       flex: 1 1 50%;
       margin-right: 1rem;
+
       @media screen and (min-width: 768px) {
         margin-right: 2rem;
       }
     }
+
     img:nth-child(2) {
       width: 42%;
       flex: 1 1 42%;
@@ -95,6 +129,7 @@ export default {
 
   .posters {
     margin-bottom: 1rem;
+
     @media screen and (min-width: 768px) {
       margin-bottom: 2rem;
     }
@@ -105,9 +140,11 @@ export default {
       position: relative;
       background-color: #d4dbf9;
       margin-bottom: 1rem;
+
       @media screen and (min-width: 768px) {
         margin-bottom: 2rem;
       }
+
       img:nth-child(2) {
         position: absolute;
         left: 0.5rem;
@@ -123,18 +160,23 @@ export default {
 
     .food {
       margin-bottom: 1rem;
+
       @media screen and (min-width: 768px) {
         margin-bottom: 2rem;
       }
+
       img:first-child {
         width: 37.6%;
         flex: 1 1 37.6%;
         margin-right: 1rem;
+
         @media screen and (min-width: 768px) {
           margin-right: 2rem;
         }
+
         background-color: #d3e1fc;
       }
+
       img:nth-child(2) {
         width: 55%;
         flex: 1 1 55%;
@@ -142,33 +184,15 @@ export default {
       }
     }
 
-    .fredy {
-      margin-bottom: 1rem;
-      @media screen and (min-width: 768px) {
-        margin-bottom: 2rem;
-      }
-      img:first-child {
-        width: 50%;
-        flex: 1 1 50%;
-        margin-right: 1rem;
-        @media screen and (min-width: 768px) {
-          margin-right: 2rem;
-        }
-        background-color: #d3e1fc;
-      }
-      img:nth-child(2) {
-        width: 42.27%;
-        flex: 1 1 42.27%;
-        background-color: #cee2fd;
-      }
-    }
   }
 
   @media screen and (min-width: 768px) {
     .wrapper {
       padding: 0 100px;
+
       .winera_cards {
         margin-bottom: 2rem;
+
         img:first-child {
           width: 55.5%;
           flex: 1 1 55.5%;
@@ -177,19 +201,38 @@ export default {
 
       .food {
         margin-bottom: 2rem;
+
         img:nth-child(2) {
           width: 59.18%;
           flex: 1 1 59.18%;
         }
       }
+    }
+  }
 
-      .fredy {
-        margin-bottom: 2rem;
-        img:first-child {
-          width: 54.52%;
-          flex: 1 1 54.52%;
-        }
+  .double-image {
+    img:first-child {
+      width: 50%;
+      flex: 1 1 50%;
+      margin-right: 1rem;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 2rem;
       }
+
+      background-color: #d3e1fc;
+    }
+
+    img:nth-child(2) {
+      width: 42.27%;
+      flex: 1 1 42.27%;
+      background-color: #cee2fd;
+    }
+  }
+
+  .full {
+    img {
+      min-width: 100%;
     }
   }
 }

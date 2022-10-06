@@ -11,6 +11,7 @@
       <span>UI</span>
     </div>
     <div class="info">
+      <Image src="/me.png" alt="me" />
       <div class="titles">
         <div class="portfolio">PORTFOLIO</div>
         <div class="description">
@@ -45,8 +46,9 @@
 <script>
 import Image from "../shared/image.vue";
 import FigmaLink from "../shared/figma-link.vue";
+import Image1 from "../shared/image.vue";
 export default {
-  components: { Image, FigmaLink },
+  components: { Image, FigmaLink, Image1 },
   methods: {
     openWebsiteProject() {
       window.open(
@@ -65,23 +67,35 @@ export default {
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    height: 1000px;
+    height: 1500px;
   }
 
-  > div {
+  >div {
     flex: 1 0 100%;
+
     @media screen and (min-width: 768px) {
       flex: 1 0 50%;
     }
   }
 
+   .me {
+      position: absolute;
+      left: 53%;
+      transform: translate(-50%, 0);
+      img {
+        width: 37vw;
+      }
+    }
+
   .uxui {
     display: none;
     font-size: 21.875rem;
     color: black;
+
     span:nth-child(2) {
       color: #d1c6fe;
     }
+
     @media screen and (min-width: 768px) {
       display: block;
       transform: rotate(90deg);
@@ -91,12 +105,14 @@ export default {
       z-index: 10;
     }
   }
+
   .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 11rem;
+
     @media screen and (min-width: 768px) {
       margin-top: 0;
       margin-left: 20%;
@@ -106,30 +122,35 @@ export default {
     .titles {
       position: relative;
       z-index: 1;
-      margin-top: 0;
+      margin-top: 3rem;
       text-align: center;
+
       @media screen and (min-width: 768px) {
         text-align: left;
-        margin-top: 7rem;
+        margin-top: -6rem;
       }
+
       .portfolio {
         font-size: 3.625rem;
         line-height: 4.625rem;
         font-weight: 400;
         margin-top: -3rem;
         text-align: center;
+
         @media screen and (min-width: 768px) {
           line-height: 7.625rem;
           font-size: 5.625rem;
           margin-top: 0;
         }
       }
+
       .description {
         font-weight: 300;
         font-size: 1.5rem;
         line-height: 2.5rem;
         text-align: center;
         max-width: 550px;
+
         @media screen and (min-width: 768px) {
           font-size: 2rem;
           line-height: 3.064rem;
@@ -141,6 +162,7 @@ export default {
   .shapes {
     display: none;
     position: absolute;
+
     @media screen and (min-width: 768px) {
       display: block;
       width: 1360px;
@@ -148,6 +170,7 @@ export default {
       top: 0;
       left: 0;
       margin-left: -6.25rem;
+
       .circle,
       .square,
       .triangular {

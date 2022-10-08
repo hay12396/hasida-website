@@ -54,7 +54,7 @@ export default {
 .wrapper {
   position: relative;
   @media screen and (min-width: 768px) {
-    margin-top: -239px;
+    margin-top: -314px;
   }
   .hero {
     padding: 1.5rem 1.5rem 0;

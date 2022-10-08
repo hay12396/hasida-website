@@ -92,11 +92,11 @@ export default {
   }
 
   margin: 1rem 0;
-  padding: 0 7vw;
+  padding: 0 1.75rem;
 
   @media screen and (min-width: 768px) {
     margin: 2rem 0;
-    padding: 0 1rem;
+    padding: 1rem 6.25rem 0 6.25rem;
   }
 
   .images {

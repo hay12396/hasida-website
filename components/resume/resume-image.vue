@@ -11,7 +11,10 @@
       <span>UI</span>
     </div>
     <div class="info">
-      <Image src="/me.png" alt="me" />
+      <div class="img-wrapper">
+        <Image src="/me.png" alt="me" />
+      </div>
+
       <div class="titles">
         <div class="portfolio">PORTFOLIO</div>
         <div class="description">
@@ -46,9 +49,8 @@
 <script>
 import Image from "../shared/image.vue";
 import FigmaLink from "../shared/figma-link.vue";
-import Image1 from "../shared/image.vue";
 export default {
-  components: { Image, FigmaLink, Image1 },
+  components: { Image, FigmaLink },
   methods: {
     openWebsiteProject() {
       window.open(
@@ -102,19 +104,26 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 11rem;
+
+    .img-wrapper {
+      min-height: calc(50vw + 4rem);
+    }
 
     img {
       width: 50vw;
+      margin: 2rem 0 1rem;
     }
 
     @media screen and (min-width: 768px) {
-      margin-top: 0;
       margin-left: 20%;
       justify-content: flex-start;
 
+      .img-wrapper {
+        min-height: calc(27vw + 4rem);
+      }
+
       img {
-        width: 37vw;
+        width: 27vw;
       }
     }
 

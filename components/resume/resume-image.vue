@@ -6,10 +6,6 @@
         <b>Figma</b> project
       </FigmaLink>
     </div>
-    <div class="uxui">
-      <span>UX</span>
-      <span>UI</span>
-    </div>
     <div class="info">
       <div class="img-wrapper">
         <Image src="/me.png" alt="me" />
@@ -69,7 +65,7 @@ export default {
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    height: 1450px;
+    height: 1150px;
   }
 
   >div {
@@ -77,25 +73,6 @@ export default {
 
     @media screen and (min-width: 768px) {
       flex: 1 0 50%;
-    }
-  }
-
-  .uxui {
-    display: none;
-    font-size: 21.875rem;
-    color: black;
-
-    span:nth-child(2) {
-      color: #d1c6fe;
-    }
-
-    @media screen and (min-width: 768px) {
-      display: block;
-      transform: rotate(90deg);
-      position: absolute;
-      top: 303px;
-      left: -20%;
-      z-index: 10;
     }
   }
 
@@ -107,6 +84,7 @@ export default {
 
     .img-wrapper {
       min-height: calc(50vw + 4rem);
+      margin-right: 5%;
     }
 
     img {
@@ -115,11 +93,15 @@ export default {
     }
 
     @media screen and (min-width: 768px) {
-      margin-left: 20%;
+      padding-top: 100px;
       justify-content: flex-start;
+      flex-direction: row;
+      align-items: initial;
+      position: relative;
+      z-index: 99999;
 
       .img-wrapper {
-        min-height: calc(27vw + 4rem);
+        min-width: 27vw;
       }
 
       img {
@@ -318,8 +300,7 @@ export default {
 
     @media screen and (min-width: 768px) {
       color: #9e95bf;
-      left: 70px;
-      top: 207px;
+      display: none;
     }
   }
 

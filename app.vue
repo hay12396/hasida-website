@@ -5,7 +5,7 @@
     <div class="circle circle3"></div>
     <div class="circle circle4"></div>
     <div class="circle circle5"></div>
-    <img src="/images/name-logo.png" alt="Hasida Zohar" />
+    <img src="/name-logo.png" alt="Hasida Zohar" />
   </div>
   <Hero />
   <TextWithFiguresSmall />

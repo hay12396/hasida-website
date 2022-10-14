@@ -98,8 +98,8 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /components/resume/resume.vue ($id_eeb28070)
 // - /components/screens/screen-number-title.vue ($id_d54691ab)
 // - /components/screens/screens.vue ($id_639dbbb9)
-// - /components/shared/text-with-figure.vue ($id_96cfc85e)
 // - /components/shenkar/shenkar.vue ($id_3a62cf4e)
+// - /components/shared/text-with-figure.vue ($id_96cfc85e)
 // - /components/test-validation/basic-flow.vue ($id_9fdd3072)
 // - /components/test-validation/low-fidelity.vue ($id_41cd7542)
 // - /components/test-validation/text-validation.vue ($id_c900ee7d)
@@ -1718,12 +1718,12 @@ const $id_780217c4 = (global, exports, importMeta, ssrImport, ssrDynamicImport, 
 // - /components/resume/resume.vue ($id_eeb28070)
 // - /components/screens/screen-number-title.vue ($id_d54691ab)
 // - /components/screens/screens.vue ($id_639dbbb9)
+// - /components/shenkar/shenkar.vue ($id_3a62cf4e)
 // - /components/shared/figma-link.vue ($id_b0e3c6da)
 // - /components/shared/image.vue ($id_f391b48d)
 // - /components/shared/numbered-title.vue ($id_6a77dede)
 // - /components/shared/text-with-figure.vue ($id_96cfc85e)
 // - /components/shared/title.vue ($id_bb43ca7c)
-// - /components/shenkar/shenkar.vue ($id_3a62cf4e)
 // - /components/test-validation/basic-flow.vue ($id_9fdd3072)
 // - /components/test-validation/low-fidelity.vue ($id_41cd7542)
 // - /components/test-validation/text-validation.vue ($id_c900ee7d)
@@ -1751,12 +1751,12 @@ const components = {
   'Resume': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/resume/resume.vue').then(c => c.default || c)),
   'ScreensScreenNumberTitle': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/screens/screen-number-title.vue').then(c => c.default || c)),
   'Screens': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/screens/screens.vue').then(c => c.default || c)),
+  'Shenkar': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/shenkar/shenkar.vue').then(c => c.default || c)),
   'SharedFigmaLink': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/shared/figma-link.vue').then(c => c.default || c)),
   'SharedImage': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/shared/image.vue').then(c => c.default || c)),
   'SharedNumberedTitle': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/shared/numbered-title.vue').then(c => c.default || c)),
   'SharedTextWithFigure': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/shared/text-with-figure.vue').then(c => c.default || c)),
   'SharedTitle': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/shared/title.vue').then(c => c.default || c)),
-  'Shenkar': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/shenkar/shenkar.vue').then(c => c.default || c)),
   'TestValidationBasicFlow': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/test-validation/basic-flow.vue').then(c => c.default || c)),
   'TestValidationLowFidelity': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/test-validation/low-fidelity.vue').then(c => c.default || c)),
   'TestValidationTextValidation': __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/components/test-validation/text-validation.vue').then(c => c.default || c)),
@@ -1873,8 +1873,8 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // - /components/resume/resume-info/resume-info-experience.vue ($id_a033c4d9)
 // - /components/resume/resume-info/resume-info-education.vue ($id_dd1f087e)
 // - /components/screens/screens.vue ($id_639dbbb9)
-// - /@id/__x00__virtual:C:/Users/hay12/Documents/Github/hasida-website/.nuxt/components.mjs ($id_ad8a724c)
 // - /components/shenkar/shenkar.vue ($id_3a62cf4e)
+// - /@id/__x00__virtual:C:/Users/hay12/Documents/Github/hasida-website/.nuxt/components.mjs ($id_ad8a724c)
 // - /components/test-validation/basic-flow.vue ($id_9fdd3072)
 // - /components/test-validation/low-fidelity.vue ($id_41cd7542)
 // Dependencies: 
@@ -1954,8 +1954,8 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_m
 // - /components/resume/resume.vue ($id_eeb28070)
 // - /components/screens/screen-number-title.vue ($id_d54691ab)
 // - /components/screens/screens.vue ($id_639dbbb9)
-// - /components/shared/text-with-figure.vue ($id_96cfc85e)
 // - /components/shenkar/shenkar.vue ($id_3a62cf4e)
+// - /components/shared/text-with-figure.vue ($id_96cfc85e)
 // - /components/test-validation/basic-flow.vue ($id_9fdd3072)
 // - /components/test-validation/low-fidelity.vue ($id_41cd7542)
 // - /components/test-validation/text-validation.vue ($id_c900ee7d)
@@ -2004,8 +2004,8 @@ __vite_ssr_exports__.default = "h3[data-v-ecaed02e] {\n  font-size: 2.25rem;\n  
 // - /components/resume/resume.vue ($id_eeb28070)
 // - /components/screens/screen-number-title.vue ($id_d54691ab)
 // - /components/screens/screens.vue ($id_639dbbb9)
-// - /components/shared/text-with-figure.vue ($id_96cfc85e)
 // - /components/shenkar/shenkar.vue ($id_3a62cf4e)
+// - /components/shared/text-with-figure.vue ($id_96cfc85e)
 // - /components/test-validation/basic-flow.vue ($id_9fdd3072)
 // - /components/test-validation/low-fidelity.vue ($id_41cd7542)
 // - /components/test-validation/text-validation.vue ($id_c900ee7d)
@@ -2042,9 +2042,9 @@ __vite_ssr_exports__.default = (sfc, props) => {
 // - /components/shared/figma-link.vue ($id_b0e3c6da)
 // - /components/resume/resume-image.vue ($id_70328d53)
 // - /components/screens/screens.vue ($id_639dbbb9)
+// - /components/shenkar/shenkar.vue ($id_3a62cf4e)
 // - /@id/__x00__virtual:C:/Users/hay12/Documents/Github/hasida-website/.nuxt/components.mjs ($id_ad8a724c)
 // - /components/shared/text-with-figure.vue ($id_96cfc85e)
-// - /components/shenkar/shenkar.vue ($id_3a62cf4e)
 // - /components/test-validation/basic-flow.vue ($id_9fdd3072)
 // - /components/test-validation/low-fidelity.vue ($id_41cd7542)
 // - /components/test-validation/text-validation.vue ($id_c900ee7d)
@@ -2569,7 +2569,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _component_Steps = __vite_ssr_import_5__.resolveComponent("Steps")
   const _component_Phones = __vite_ssr_import_5__.resolveComponent("Phones")
 
-  _push(`<div${__vite_ssr_import_6__.ssrRenderAttrs(__vite_ssr_import_5__.mergeProps({ class: "wrapper" }, _attrs))} data-v-c07c5a78><div class="hero" data-v-c07c5a78><div class="title" data-v-c07c5a78>Mr. Pro Shake</div><div class="sub-title" data-v-c07c5a78> The new way to order protein shakes, <br data-v-c07c5a78><b data-v-c07c5a78>discover</b> a new taste every day. </div><div class="figma-links" data-v-c07c5a78>`)
+  _push(`<div${__vite_ssr_import_6__.ssrRenderAttrs(__vite_ssr_import_5__.mergeProps({ class: "wrapper" }, _attrs))} data-v-c07c5a78><div class="square" data-v-c07c5a78></div><div class="hero" data-v-c07c5a78><div class="title" data-v-c07c5a78>Mr. Pro Shake</div><div class="sub-title" data-v-c07c5a78> The new way to order protein shakes, <br data-v-c07c5a78><b data-v-c07c5a78>discover</b> a new taste every day. </div><div class="figma-links" data-v-c07c5a78>`)
   _push(__vite_ssr_import_6__.ssrRenderComponent(_component_FigmaLink, null, {
     default: __vite_ssr_import_5__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
@@ -2865,7 +2865,7 @@ __vite_ssr_exports__.default = ".figma-link[data-v-75ca9fce] {\n  cursor: pointe
 
 // --------------------
 const $id_439029ee = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = ".wrapper[data-v-c07c5a78] {\n  position: relative;\n}\n.wrapper .hero[data-v-c07c5a78] {\n  padding: 1.5rem 1.5rem 0;\n}\n@media screen and (min-width: 768px) {\n.wrapper .hero[data-v-c07c5a78] {\n    padding: 9rem 6.25rem 0 6.25rem;\n}\n}\n.wrapper .hero .title[data-v-c07c5a78] {\n  margin-top: 1.375rem;\n  margin-bottom: 1rem;\n  font-size: 3rem;\n  color: #9e95bf;\n  font-weight: 700;\n  line-height: 4.086rem;\n}\n.wrapper .hero .sub-title[data-v-c07c5a78] {\n  color: #9e95bf;\n  font-size: 1.5rem;\n  line-height: 2.043rem;\n  margin-bottom: 2rem;\n}\n.wrapper .hero .sub-title b[data-v-c07c5a78] {\n  font-weight: 700;\n}\n.wrapper .phones-wrapper[data-v-c07c5a78] {\n  position: absolute;\n  right: 0;\n  top: 0;\n  display: none;\n}\n@media screen and (min-width: 768px) {\n.wrapper .phones-wrapper[data-v-c07c5a78] {\n    display: block;\n}\n}\n.wrapper .figma-links[data-v-c07c5a78] {\n  color: #a259ff;\n  display: flex;\n  margin-bottom: 2rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .figma-links[data-v-c07c5a78] {\n    color: #9e95bf;\n}\n}\n.wrapper .figma-links .second-link[data-v-c07c5a78] {\n  margin-left: 2rem;\n}\n";
+__vite_ssr_exports__.default = ".wrapper[data-v-c07c5a78] {\n  position: relative;\n}\n.wrapper .square[data-v-c07c5a78] {\n  display: none;\n}\n@media screen and (min-width: 768px) {\n.wrapper .square[data-v-c07c5a78] {\n    position: absolute;\n    left: 6.25rem;\n    top: 3rem;\n    background-color: #F4F6FF;\n    width: 8.36vw;\n    height: 6.11vh;\n    display: block;\n}\n}\n.wrapper .hero[data-v-c07c5a78] {\n  padding: 1.5rem 1.5rem 0;\n}\n@media screen and (min-width: 768px) {\n.wrapper .hero[data-v-c07c5a78] {\n    padding: 4rem 6.25rem 0 6.25rem;\n}\n}\n.wrapper .hero .title[data-v-c07c5a78] {\n  margin-top: 1.375rem;\n  margin-bottom: 1rem;\n  font-size: 3rem;\n  color: #9e95bf;\n  font-weight: 700;\n  line-height: 4.086rem;\n}\n.wrapper .hero .sub-title[data-v-c07c5a78] {\n  color: #9e95bf;\n  font-size: 1.5rem;\n  line-height: 2.043rem;\n  margin-bottom: 2rem;\n}\n.wrapper .hero .sub-title b[data-v-c07c5a78] {\n  font-weight: 700;\n}\n.wrapper .phones-wrapper[data-v-c07c5a78] {\n  position: absolute;\n  right: 0;\n  top: 0;\n  display: none;\n}\n@media screen and (min-width: 768px) {\n.wrapper .phones-wrapper[data-v-c07c5a78] {\n    display: block;\n}\n}\n.wrapper .figma-links[data-v-c07c5a78] {\n  color: #a259ff;\n  display: flex;\n  margin-bottom: 2rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .figma-links[data-v-c07c5a78] {\n    color: #9e95bf;\n}\n}\n.wrapper .figma-links .second-link[data-v-c07c5a78] {\n  margin-left: 2rem;\n}\n";
 }
 
 
@@ -3607,103 +3607,6 @@ __vite_ssr_exports__.default = ".screens[data-v-0647ad14] {\n  position: relativ
 
 
 // --------------------
-// Request: /components/shared/text-with-figure.vue
-// Parents: 
-// - /@id/__x00__virtual:C:/Users/hay12/Documents/Github/hasida-website/.nuxt/components.mjs ($id_ad8a724c)
-// - /components/text-and-figures/text-and-figures-big.vue ($id_b6d5f97f)
-// Dependencies: 
-// - /components/shared/numbered-title.vue ($id_6a77dede)
-// - /components/shared/image.vue ($id_f391b48d)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
-// - /components/shared/text-with-figure.vue?vue&type=style&index=0&scoped=true&lang.less ($id_83e1ad26)
-// - /@id/plugin-vue:export-helper ($id_bbb863c1)
-// --------------------
-const $id_96cfc85e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/shared/numbered-title.vue");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/shared/image.vue");
-
-const _sfc_main = {
-  components: { NumberedTitle: __vite_ssr_import_0__.default, Image: __vite_ssr_import_1__.default },
-  props: {
-    number: String,
-    title: String,
-    figure: String,
-    color: String,
-    class: String,
-    titleClass: String,
-    figureStyle: String,
-    figureSide: "left" | "right",
-  },
-  methods: {
-    getImageUrl() {
-      return "/personas/" + this.figure + ".png";
-    },
-    getClass() {
-      return this.class + " " + this.figureSide;
-    },
-  },
-};
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
-
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_NumberedTitle = __vite_ssr_import_2__.resolveComponent("NumberedTitle")
-  const _component_Image = __vite_ssr_import_2__.resolveComponent("Image")
-
-  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({
-    class: ["wrapper", $options.getClass()]
-  }, _attrs))} data-v-dc00f4ac><div class="text" data-v-dc00f4ac>`)
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_NumberedTitle, {
-    color: $props.color,
-    number: $props.number,
-    title: $props.title
-  }, null, _parent))
-  __vite_ssr_import_3__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
-  _push(`</div><div class="figure" style="${__vite_ssr_import_3__.ssrRenderStyle($props.figureStyle)}" data-v-dc00f4ac>`)
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_Image, {
-    src: $options.getImageUrl(),
-    alt: $props.figure
-  }, null, _parent))
-  _push(`</div></div>`)
-}
-
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/components/shared/text-with-figure.vue?vue&type=style&index=0&scoped=true&lang.less");
-
-
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const _sfc_setup = _sfc_main.setup
-_sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_5__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/shared/text-with-figure.vue")
-  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
-}
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
-
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-dc00f4ac"],['__file',"C:/Users/hay12/Documents/Github/hasida-website/components/shared/text-with-figure.vue"]]);
-}
-
-
-// --------------------
-// Request: /components/shared/text-with-figure.vue?vue&type=style&index=0&scoped=true&lang.less
-// Parents: 
-// - /components/shared/text-with-figure.vue ($id_96cfc85e)
-// Dependencies: 
-
-// --------------------
-const $id_83e1ad26 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = ".wrapper[data-v-dc00f4ac] {\n  display: flex;\n  flex-direction: column-reverse;\n}\n@media screen and (min-width: 768px) {\n.wrapper[data-v-dc00f4ac] {\n    flex-direction: row;\n}\n.wrapper.left[data-v-dc00f4ac] {\n    flex-direction: row-reverse;\n    justify-content: flex-end;\n}\n}\n.wrapper .figure[data-v-dc00f4ac],\n.wrapper .figure img[data-v-dc00f4ac] {\n  width: 152px;\n  margin-left: -0.5rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .figure[data-v-dc00f4ac],\n  .wrapper .figure img[data-v-dc00f4ac] {\n    width: 182px;\n    height: 192px;\n    margin-left: 0;\n}\n}\n@media screen and (min-width: 768px) {\n.d-pl-1[data-v-dc00f4ac] {\n    padding-left: 2.5rem;\n}\n}\n";
-}
-
-
-// --------------------
 // Request: /components/shenkar/shenkar.vue
 // Parents: 
 // - /@id/__x00__virtual:C:/Users/hay12/Documents/Github/hasida-website/.nuxt/components.mjs ($id_ad8a724c)
@@ -3885,6 +3788,103 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // --------------------
 const $id_e97f66b7 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 __vite_ssr_exports__.default = ".wrapper[data-v-73084ac2] {\n  margin: 1rem 0;\n  padding: 0 1.75rem;\n}\n.wrapper img[data-v-73084ac2] {\n  cursor: pointer;\n}\n@media screen and (min-width: 768px) {\n.wrapper[data-v-73084ac2] {\n    margin: 2rem 0;\n    padding: 1rem 6.25rem 0 6.25rem;\n}\n}\n.wrapper .images[data-v-73084ac2] {\n  margin-top: 1rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .images[data-v-73084ac2] {\n    margin-top: 2rem;\n}\n}\n.wrapper .business[data-v-73084ac2] {\n  width: 100%;\n  margin-bottom: 1rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .business[data-v-73084ac2] {\n    margin-bottom: 2rem;\n}\n}\n.wrapper .business img[data-v-73084ac2] {\n  width: 100%;\n}\n.wrapper .line[data-v-73084ac2] {\n  display: flex;\n  margin-bottom: 1rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .line[data-v-73084ac2] {\n    margin-bottom: 2rem;\n}\n}\n.wrapper .winera_cards[data-v-73084ac2] {\n  margin-bottom: 1rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .winera_cards[data-v-73084ac2] {\n    margin-bottom: 2rem;\n}\n}\n.wrapper .winera_cards img[data-v-73084ac2]:first-child {\n  width: 50%;\n  flex: 1 1 50%;\n  margin-right: 1rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .winera_cards img[data-v-73084ac2]:first-child {\n    margin-right: 2rem;\n}\n}\n.wrapper .winera_cards img[data-v-73084ac2]:nth-child(2) {\n  width: 42%;\n  flex: 1 1 42%;\n}\n.wrapper .posters[data-v-73084ac2] {\n  margin-bottom: 1rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .posters[data-v-73084ac2] {\n    margin-bottom: 2rem;\n}\n}\n.wrapper .music .two_cups[data-v-73084ac2] {\n  position: relative;\n  background-color: #d4dbf9;\n  margin-bottom: 1rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .music .two_cups[data-v-73084ac2] {\n    margin-bottom: 2rem;\n}\n}\n.wrapper .music .two_cups img[data-v-73084ac2]:nth-child(2) {\n  position: absolute;\n  left: 0.5rem;\n  top: 0.5rem;\n  width: 18%;\n}\n@media screen and (min-width: 768px) {\n.wrapper .music .two_cups img[data-v-73084ac2]:nth-child(2) {\n    top: 1rem;\n    left: 1rem;\n}\n}\n.wrapper .music .food[data-v-73084ac2] {\n  margin-bottom: 1rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .music .food[data-v-73084ac2] {\n    margin-bottom: 2rem;\n}\n}\n.wrapper .music .food img[data-v-73084ac2]:first-child {\n  width: 37.6%;\n  flex: 1 1 37.6%;\n  margin-right: 1rem;\n  background-color: #d3e1fc;\n}\n@media screen and (min-width: 768px) {\n.wrapper .music .food img[data-v-73084ac2]:first-child {\n    margin-right: 2rem;\n}\n}\n.wrapper .music .food img[data-v-73084ac2]:nth-child(2) {\n  width: 55%;\n  flex: 1 1 55%;\n  background-color: #cee2fd;\n}\n@media screen and (min-width: 768px) {\n.wrapper .wrapper[data-v-73084ac2] {\n    padding: 0 100px;\n}\n.wrapper .wrapper .winera_cards[data-v-73084ac2] {\n    margin-bottom: 2rem;\n}\n.wrapper .wrapper .winera_cards img[data-v-73084ac2]:first-child {\n    width: 55.5%;\n    flex: 1 1 55.5%;\n}\n.wrapper .wrapper .food[data-v-73084ac2] {\n    margin-bottom: 2rem;\n}\n.wrapper .wrapper .food img[data-v-73084ac2]:nth-child(2) {\n    width: 59.18%;\n    flex: 1 1 59.18%;\n}\n}\n.wrapper .double-image img[data-v-73084ac2]:first-child {\n  width: 50%;\n  flex: 1 1 50%;\n  margin-right: 1rem;\n  background-color: #d3e1fc;\n}\n@media screen and (min-width: 768px) {\n.wrapper .double-image img[data-v-73084ac2]:first-child {\n    margin-right: 2rem;\n}\n}\n.wrapper .double-image img[data-v-73084ac2]:nth-child(2) {\n  width: 42.27%;\n  flex: 1 1 42.27%;\n  background-color: #cee2fd;\n}\n.wrapper .full img[data-v-73084ac2] {\n  min-width: 100%;\n}\n.wrapper .normal-cursor img[data-v-73084ac2] {\n  cursor: default;\n}\n";
+}
+
+
+// --------------------
+// Request: /components/shared/text-with-figure.vue
+// Parents: 
+// - /@id/__x00__virtual:C:/Users/hay12/Documents/Github/hasida-website/.nuxt/components.mjs ($id_ad8a724c)
+// - /components/text-and-figures/text-and-figures-big.vue ($id_b6d5f97f)
+// Dependencies: 
+// - /components/shared/numbered-title.vue ($id_6a77dede)
+// - /components/shared/image.vue ($id_f391b48d)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /components/shared/text-with-figure.vue?vue&type=style&index=0&scoped=true&lang.less ($id_83e1ad26)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_96cfc85e = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/shared/numbered-title.vue");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/shared/image.vue");
+
+const _sfc_main = {
+  components: { NumberedTitle: __vite_ssr_import_0__.default, Image: __vite_ssr_import_1__.default },
+  props: {
+    number: String,
+    title: String,
+    figure: String,
+    color: String,
+    class: String,
+    titleClass: String,
+    figureStyle: String,
+    figureSide: "left" | "right",
+  },
+  methods: {
+    getImageUrl() {
+      return "/personas/" + this.figure + ".png";
+    },
+    getClass() {
+      return this.class + " " + this.figureSide;
+    },
+  },
+};
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_NumberedTitle = __vite_ssr_import_2__.resolveComponent("NumberedTitle")
+  const _component_Image = __vite_ssr_import_2__.resolveComponent("Image")
+
+  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({
+    class: ["wrapper", $options.getClass()]
+  }, _attrs))} data-v-dc00f4ac><div class="text" data-v-dc00f4ac>`)
+  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_NumberedTitle, {
+    color: $props.color,
+    number: $props.number,
+    title: $props.title
+  }, null, _parent))
+  __vite_ssr_import_3__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</div><div class="figure" style="${__vite_ssr_import_3__.ssrRenderStyle($props.figureStyle)}" data-v-dc00f4ac>`)
+  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_Image, {
+    src: $options.getImageUrl(),
+    alt: $props.figure
+  }, null, _parent))
+  _push(`</div></div>`)
+}
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/components/shared/text-with-figure.vue?vue&type=style&index=0&scoped=true&lang.less");
+
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_5__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/shared/text-with-figure.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-dc00f4ac"],['__file',"C:/Users/hay12/Documents/Github/hasida-website/components/shared/text-with-figure.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/shared/text-with-figure.vue?vue&type=style&index=0&scoped=true&lang.less
+// Parents: 
+// - /components/shared/text-with-figure.vue ($id_96cfc85e)
+// Dependencies: 
+
+// --------------------
+const $id_83e1ad26 = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = ".wrapper[data-v-dc00f4ac] {\n  display: flex;\n  flex-direction: column-reverse;\n}\n@media screen and (min-width: 768px) {\n.wrapper[data-v-dc00f4ac] {\n    flex-direction: row;\n}\n.wrapper.left[data-v-dc00f4ac] {\n    flex-direction: row-reverse;\n    justify-content: flex-end;\n}\n}\n.wrapper .figure[data-v-dc00f4ac],\n.wrapper .figure img[data-v-dc00f4ac] {\n  width: 152px;\n  margin-left: -0.5rem;\n}\n@media screen and (min-width: 768px) {\n.wrapper .figure[data-v-dc00f4ac],\n  .wrapper .figure img[data-v-dc00f4ac] {\n    width: 182px;\n    height: 192px;\n    margin-left: 0;\n}\n}\n@media screen and (min-width: 768px) {\n.d-pl-1[data-v-dc00f4ac] {\n    padding-left: 2.5rem;\n}\n}\n";
 }
 
 
@@ -4795,10 +4795,10 @@ const __modules__ = {
  '/components/screens/screen-number-title.vue?vue&type=style&index=0&scoped=true&lang.less': $id_22e0cc44,
  '/components/screens/screens.vue': $id_639dbbb9,
  '/components/screens/screens.vue?vue&type=style&index=0&scoped=true&lang.less': $id_b000e50a,
- '/components/shared/text-with-figure.vue': $id_96cfc85e,
- '/components/shared/text-with-figure.vue?vue&type=style&index=0&scoped=true&lang.less': $id_83e1ad26,
  '/components/shenkar/shenkar.vue': $id_3a62cf4e,
  '/components/shenkar/shenkar.vue?vue&type=style&index=0&scoped=true&lang.less': $id_e97f66b7,
+ '/components/shared/text-with-figure.vue': $id_96cfc85e,
+ '/components/shared/text-with-figure.vue?vue&type=style&index=0&scoped=true&lang.less': $id_83e1ad26,
  '/components/test-validation/basic-flow.vue': $id_9fdd3072,
  '/components/test-validation/basic-flow.vue?vue&type=style&index=0&scoped=true&lang.less': $id_05194a03,
  '/components/test-validation/low-fidelity.vue': $id_41cd7542,

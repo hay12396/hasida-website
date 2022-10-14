@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <div class="square"></div>
     <div class="hero">
       <div class="title">Mr. Pro Shake</div>
       <div class="sub-title">
@@ -54,11 +55,27 @@ export default {
 .wrapper {
   position: relative;
 
+  .square {
+    display: none;
+
+    @media screen and (min-width:768px) {
+      position: absolute;
+      left: 6.25rem;
+      top: 3rem;
+      background-color: #F4F6FF;
+      width: 8.36vw;
+      height: 6.11vh;
+      display: block;
+    }
+  }
+
   .hero {
     padding: 1.5rem 1.5rem 0;
+
     @media screen and (min-width: 768px) {
-      padding: 9rem 6.25rem 0 6.25rem;
+      padding: 4rem 6.25rem 0 6.25rem;
     }
+
     .title {
       margin-top: 1.375rem;
       margin-bottom: 1rem;
@@ -85,6 +102,7 @@ export default {
     right: 0;
     top: 0;
     display: none;
+
     @media screen and (min-width: 768px) {
       display: block;
     }
@@ -92,9 +110,11 @@ export default {
 
   .figma-links {
     color: #a259ff;
+
     @media screen and (min-width: 768px) {
       color: #9e95bf;
     }
+
     display: flex;
     margin-bottom: 2rem;
 

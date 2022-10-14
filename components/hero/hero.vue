@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="square"></div>
     <div class="hero">
-      <div class="title">Mr. Pro Shake</div>
+      <!-- <div class="title">Mr. Pro Shake</div> -->
       <div class="sub-title">
         The new way to order protein shakes,
         <br />
@@ -89,7 +89,7 @@ export default {
       color: #9e95bf;
       font-size: 1.5rem;
       line-height: 2.043rem;
-      margin-bottom: 2rem;
+      margin: 2rem 0;
 
       b {
         font-weight: 700;

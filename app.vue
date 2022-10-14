@@ -1,5 +1,4 @@
 <template>
-  <Resume />
   <Hero />
   <TextWithFiguresBig />
   <TextWithFiguresSmall />
@@ -7,8 +6,6 @@
   <DesignConcepts />
   <TestValidation />
   <Screens />
-  <Shenkar />
-  <Contact />
 </template>
 
 <script>

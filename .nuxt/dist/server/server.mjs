@@ -4672,16 +4672,14 @@ const __vite_ssr_import_15__ = await __vite_ssr_import__("/node_modules/vue/serv
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_Hero = __vite_ssr_import_0__.default
-  const _component_TextWithFiguresBig = __vite_ssr_import_14__.resolveComponent("TextWithFiguresBig")
   const _component_TextWithFiguresSmall = __vite_ssr_import_14__.resolveComponent("TextWithFiguresSmall")
   const _component_DeskResearch = __vite_ssr_import_1__.default
   const _component_DesignConcepts = __vite_ssr_import_2__.default
   const _component_TestValidation = __vite_ssr_import_14__.resolveComponent("TestValidation")
   const _component_Screens = __vite_ssr_import_3__.default
 
-  _push(`<!--[-->`)
+  _push(`<!--[--><div class="header"><div class="circle circle1"></div><div class="circle circle2"></div><div class="circle circle3"></div><div class="circle circle4"></div><div class="circle circle5"></div><img src="/images/name-logo.png" alt="Hasida Zohar"></div>`)
   _push(__vite_ssr_import_15__.ssrRenderComponent(_component_Hero, null, null, _parent))
-  _push(__vite_ssr_import_15__.ssrRenderComponent(_component_TextWithFiguresBig, null, null, _parent))
   _push(__vite_ssr_import_15__.ssrRenderComponent(_component_TextWithFiguresSmall, null, null, _parent))
   _push(__vite_ssr_import_15__.ssrRenderComponent(_component_DeskResearch, null, null, _parent))
   _push(__vite_ssr_import_15__.ssrRenderComponent(_component_DesignConcepts, null, null, _parent))
@@ -4715,7 +4713,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_18__.default(_sfc_
 
 // --------------------
 const $id_7e68c11d = async function (global, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n@import url(\"https://fonts.googleapis.com/css?family=Open%20Sans&display=swap\");\n* {\r\n  font-family: \"Open Sans\";\n}\nhtml,\r\nbody {\r\n  padding: 0;\r\n  margin: 0 auto;\r\n  max-width: 100%;\r\n  border: 1px solid #d1c6fe22;\r\n  font-size: 14px;\n}\nbody {\r\n  overflow-x: hidden;\n}\n@media screen and (min-width: 768px) {\nhtml,\r\n  body {\r\n    max-width: 768px;\n}\n}\n@media screen and (min-width: 1280px) {\nhtml,\r\n  body {\r\n    max-width: 1280px;\n}\n}\n@media screen and (min-width: 1360px) {\nhtml,\r\n  body {\r\n    font-size: 16px;\r\n    max-width: 1360px;\n}\n}\nul {\r\n  padding-left: 1.5rem;\n}\r\n";
+__vite_ssr_exports__.default = "\n@import url(\"https://fonts.googleapis.com/css?family=Open%20Sans&display=swap\");\n* {\r\n  font-family: \"Open Sans\";\n}\nhtml,\r\nbody {\r\n  padding: 0;\r\n  margin: 0 auto;\r\n  max-width: 100%;\r\n  border: 1px solid #d1c6fe22;\r\n  font-size: 14px;\n}\nbody {\r\n  overflow-x: hidden;\n}\n@media screen and (min-width: 768px) {\nhtml,\r\n  body {\r\n    max-width: 768px;\n}\n}\n@media screen and (min-width: 1280px) {\nhtml,\r\n  body {\r\n    max-width: 1280px;\n}\n}\n@media screen and (min-width: 1360px) {\nhtml,\r\n  body {\r\n    font-size: 16px;\r\n    max-width: 1360px;\n}\n}\nul {\r\n  padding-left: 1.5rem;\n}\n.header {\r\n  text-align: center;\n}\n.header img {\r\n  height: 7.92vh;\r\n  margin: 6vh 0 0.67vh;\n}\n@media screen and (min-width:768px) {\n.header img {\r\n    height: 16.92vh;\r\n    margin: 23.04vh 0 10.67vh;\n}\n}\n.header {\r\n  padding: 4vw;\r\n  max-width: 100%;\r\n  overflow-x: hidden;\n}\n@media screen and (min-width:768px) {\n.header {\r\n    padding: 0 12.6vh 0;\n}\n}\n.header .circle {\r\n  border-radius: 100%;\r\n  position: absolute;\r\n  z-index: 1;\r\n  display: none;\n}\n@media screen and (min-width:768px) {\n.header .circle {\r\n    display: block;\n}\n}\n.header .circle1 {\r\n  background-color: rgba(211, 225, 253, 0.69);\r\n  width: 9.7vw;\r\n  height: 9.7vw;\r\n\r\n  left: 2.64vw;\r\n  top: 5.3vh;\r\n\r\n  z-index: 2;\n}\n.header .circle2 {\r\n  background-color: rgba(211, 225, 253, 0.37);\r\n  width: 9.7vw;\r\n  height: 9.7vw;\r\n\r\n  left: 7.42vw;\r\n  top: 15.1vh;\n}\n.header .circle3 {\r\n  background-color: rgba(209, 198, 254, 0.19);\r\n  width: 12.64vw;\r\n  height: 12.64vw;\r\n\r\n  left: 25.44vw;\r\n  top: 11.32vh;\n}\n.header .circle4 {\r\n  background-color: rgba(211, 225, 253, 0.37);\r\n  width: 9.7vw;\r\n  height: 9.7vw;\r\n\r\n  right: 3.3vw;\r\n  top: 3.38vh;\n}\n.header .circle5 {\r\n  background-color: rgba(209, 198, 254, 0.4);\r\n  width: 12.64vw;\r\n  height: 12.64vw;\r\n\r\n  right: 11.69vw;\r\n  top: 21.85vh;\n}\n.header img {\r\n  cursor: pointer;\n}\r\n";
 }
 
 

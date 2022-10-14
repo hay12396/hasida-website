@@ -5,7 +5,7 @@
     <div class="circle circle3"></div>
     <div class="circle circle4"></div>
     <div class="circle circle5"></div>
-    <img src="/name-logo.png" alt="Hasida Zohar" />
+    <img :src="getImageSrc()" alt="Hasida Zohar" />
   </div>
   <Hero />
   <TextWithFiguresSmall />
@@ -28,6 +28,11 @@ import Contact from "./components/contact/contact.vue";
 import Shenkar from "./components/shenkar/shenkar.vue";
 
 export default {
+  methods: {
+    getImageSrc() {
+      return "/name-logo.png";
+    }
+  },
   mounted() {
     let w = window.screen.width;
     let old = document.querySelector("meta[name='viewport']");

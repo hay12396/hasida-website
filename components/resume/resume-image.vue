@@ -84,7 +84,7 @@ export default {
 
     .img-wrapper {
       min-height: calc(50vw + 4rem);
-      margin-right: 5%;
+      margin-right: 5%
     }
 
     img {

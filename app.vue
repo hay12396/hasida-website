@@ -134,7 +134,7 @@ ul {
 
 @media screen and (min-width:768px) {
   .header {
-    padding: 0 12.6vh 0;
+    padding: 0 12.6vh 4vh;
   }
 }
 

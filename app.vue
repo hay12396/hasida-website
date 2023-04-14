@@ -81,14 +81,6 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (min-width: 768px) {
-
-  html,
-  body {
-    max-width: 768px;
-  }
-}
-
 @media screen and (min-width: 1280px) {
 
   html,

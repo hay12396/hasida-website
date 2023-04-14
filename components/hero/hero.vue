@@ -54,6 +54,11 @@ export default {
 <style scoped lang="less">
 .wrapper {
   position: relative;
+  margin-top: -20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 
   .square {
     display: none;
@@ -70,7 +75,7 @@ export default {
   }
 
   .hero {
-    padding: 1.5rem 1.5rem 0;
+    padding: 0 1.5rem 0;
 
     @media screen and (min-width: 768px) {
       padding: 4rem 6.25rem 0 6.25rem;

@@ -119,7 +119,7 @@ ul {
 }
 
 .header {
-  padding: 4vw;
+  padding: 4vw 4vw 0;
   max-width: 100%;
   overflow-x: hidden;
 }

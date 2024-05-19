@@ -131,6 +131,7 @@ ul {
   }
 }
 
+
 .header .circle {
   border-radius: 100%;
   position: absolute;

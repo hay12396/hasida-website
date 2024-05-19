@@ -79,6 +79,7 @@ body {
 
 body {
   overflow-x: hidden;
+  padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 1280px) {
